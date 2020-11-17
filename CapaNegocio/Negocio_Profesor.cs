@@ -11,6 +11,18 @@ namespace CapaNegocio
 {
     public class Negocio_Profesor
     {
+        private int idProfesor;
+        private string Codigo;
+        private string Nombre;
+        private string Apellido;
+        private string Sexo;
+        private int Dni;
+        private DateTime Fechanac;
+        private string Direccion;
+        private long Telefono;
+        private string Email;
+        private string Buscar;
+
         Datos_Profesor datos_Profesor = new Datos_Profesor();
         Entidades_Profesor entidades_Profesor = new Entidades_Profesor();
 
