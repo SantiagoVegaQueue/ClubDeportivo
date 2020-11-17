@@ -26,6 +26,18 @@ namespace CapaNegocio
         Datos_Profesor datos_Profesor = new Datos_Profesor();
         Entidades_Profesor entidades_Profesor = new Entidades_Profesor();
 
+        public int IdProfesor { get => idProfesor; set => idProfesor = value; }
+        public string Codigo1 { get => Codigo; set => Codigo = value; }
+        public string Nombre1 { get => Nombre; set => Nombre = value; }
+        public string Apellido1 { get => Apellido; set => Apellido = value; }
+        public string Sexo1 { get => Sexo; set => Sexo = value; }
+        public int Dni1 { get => Dni; set => Dni = value; }
+        public DateTime Fechanac1 { get => Fechanac; set => Fechanac = value; }
+        public string Direccion1 { get => Direccion; set => Direccion = value; }
+        public long Telefono1 { get => Telefono; set => Telefono = value; }
+        public string Email1 { get => Email; set => Email = value; }
+        public string Buscar1 { get => Buscar; set => Buscar = value; }
+
         public DataTable ListarProfesor()
         {
             return datos_Profesor.ListarProfesor();
