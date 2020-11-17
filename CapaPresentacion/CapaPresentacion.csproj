@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormSocios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSocios.Designer.cs">
+      <DependentUpon>FormSocios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsDeportes\FormDeporte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDeportes\FormMantenimientoDeporte.resx">
       <DependentUpon>FormMantenimientoDeporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSocios.resx">
+      <DependentUpon>FormSocios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsProfesor\FormMantenimientoProfesor.resx">
       <DependentUpon>FormMantenimientoProfesor.cs</DependentUpon>
