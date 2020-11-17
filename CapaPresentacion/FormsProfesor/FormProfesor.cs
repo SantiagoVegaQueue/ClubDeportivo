@@ -15,7 +15,7 @@ namespace CapaPresentacion
     public partial class FormProfesor : Form
     {
         Negocio_Profesor negocioProfesor = new Negocio_Profesor();
-        Entidades_Profesor entidades_Profesor = new Entidades_Profesor();
+        
         
         private string idProfesor;
         public string IdProfesor { get => idProfesor; set => idProfesor = value; }
@@ -176,8 +176,8 @@ namespace CapaPresentacion
         {
             if (tablaProfesor.SelectedRows.Count > 0)
             {
-                entidades_Profesor.IdProfesor = Convert.ToInt32(tablaProfesor.CurrentRow.Cells[0].Value.ToString());
-                negocioProfesor.EliminarProfesor(entidades_Profesor);
+                int idProfesor = Convert.ToInt32(tablaProfesor.CurrentRow.Cells[0].Value.ToString());
+                negocioProfesor.EliminarProfesor(idProfesor);
 
                 MessageBox.Show("Se elimino");
                 listarProfesor();

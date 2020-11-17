@@ -107,13 +107,13 @@ namespace CapaDatos
 
         }
 
-        public void EliminarProfesor(Entidades_Profesor Profesor)
+        public void EliminarProfesor(int idProfe)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARPROFESOR", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@IDPROFESOR", Profesor.IdProfesor);
+            cmd.Parameters.AddWithValue("@IDPROFESOR", idProfe);
 
             cmd.ExecuteNonQuery();
 

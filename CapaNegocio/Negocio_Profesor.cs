@@ -58,9 +58,9 @@ namespace CapaNegocio
             datos_Profesor.EditarProfesor(IdProfesor, Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Direccion1, Telefono1, Email1);
         }
 
-        public void EliminarProfesor(Entidades_Profesor Profesor)
+        public void EliminarProfesor(int IdProfesor)
         {
-            datos_Profesor.EliminarProfesor(Profesor);
+            datos_Profesor.EliminarProfesor(IdProfesor);
         }
     }
 }
