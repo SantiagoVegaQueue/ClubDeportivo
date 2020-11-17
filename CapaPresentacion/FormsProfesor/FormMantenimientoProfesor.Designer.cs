@@ -68,7 +68,6 @@
             this.txtBoxNombreProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxNombreProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxNombreProfesor.BorderThickness = 1;
-            this.txtBoxNombreProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxNombreProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNombreProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxNombreProfesor.isPassword = false;
@@ -128,7 +127,6 @@
             this.txtBoxIdProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxIdProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxIdProfesor.BorderThickness = 1;
-            this.txtBoxIdProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxIdProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxIdProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxIdProfesor.isPassword = false;
@@ -160,7 +158,6 @@
             this.btnGuardarProfesor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardarProfesor.BorderRadius = 7;
             this.btnGuardarProfesor.ButtonText = "Guardar";
-            this.btnGuardarProfesor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardarProfesor.DisabledColor = System.Drawing.Color.Gray;
             this.btnGuardarProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarProfesor.Iconcolor = System.Drawing.Color.Transparent;
@@ -196,7 +193,6 @@
             this.txtBoxApellidoProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxApellidoProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxApellidoProfesor.BorderThickness = 1;
-            this.txtBoxApellidoProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxApellidoProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxApellidoProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxApellidoProfesor.isPassword = false;
@@ -224,7 +220,6 @@
             this.txtBoxDniProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxDniProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxDniProfesor.BorderThickness = 1;
-            this.txtBoxDniProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxDniProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDniProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxDniProfesor.isPassword = false;
@@ -277,8 +272,8 @@
             this.datePickerFechaNacProfesor.BorderRadius = 0;
             this.datePickerFechaNacProfesor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.datePickerFechaNacProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.datePickerFechaNacProfesor.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.datePickerFechaNacProfesor.FormatCustom = null;
+            this.datePickerFechaNacProfesor.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datePickerFechaNacProfesor.FormatCustom = "dd-MM-yyyy";
             this.datePickerFechaNacProfesor.Location = new System.Drawing.Point(231, 243);
             this.datePickerFechaNacProfesor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.datePickerFechaNacProfesor.Name = "datePickerFechaNacProfesor";
@@ -313,7 +308,6 @@
             this.txtBoxEmailProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxEmailProfesor.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtBoxEmailProfesor.BorderThickness = 1;
-            this.txtBoxEmailProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxEmailProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxEmailProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxEmailProfesor.isPassword = false;
@@ -341,7 +335,6 @@
             this.txtBoxDireccionProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxDireccionProfesor.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtBoxDireccionProfesor.BorderThickness = 1;
-            this.txtBoxDireccionProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxDireccionProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDireccionProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxDireccionProfesor.isPassword = false;
@@ -369,7 +362,6 @@
             this.txtBoxTelefonoProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxTelefonoProfesor.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtBoxTelefonoProfesor.BorderThickness = 1;
-            this.txtBoxTelefonoProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxTelefonoProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxTelefonoProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxTelefonoProfesor.isPassword = false;
