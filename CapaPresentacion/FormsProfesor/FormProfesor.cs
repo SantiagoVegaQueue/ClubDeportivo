@@ -68,8 +68,7 @@ namespace CapaPresentacion
         #region Buscar profesor
         public void buscarProfesor(string buscar)
         {
-            Negocio_Profesor profesor = new Negocio_Profesor();
-            tablaProfesor.DataSource = profesor.BuscarProfesor(buscar);
+            tablaProfesor.DataSource = negocioProfesor.BuscarProfesor(buscar);
         }
 
         private void txtBoxBuscarProfesor_OnValueChanged(object sender, EventArgs e)

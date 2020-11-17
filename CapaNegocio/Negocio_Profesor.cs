@@ -43,10 +43,9 @@ namespace CapaNegocio
             return datos_Profesor.ListarProfesor();
         }
 
-        public DataTable BuscarProfesor(string Buscar)
+        public DataTable BuscarProfesor(string Buscar1)
         {
-            entidades_Profesor.Buscar1 = Buscar;
-            return datos_Profesor.BuscarProfesor(entidades_Profesor);
+            return datos_Profesor.BuscarProfesor(Buscar1);
         }
 
         public void InsertarProfesor(string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Direccion1, long Telefono1, string Email1)

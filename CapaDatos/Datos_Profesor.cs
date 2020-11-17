@@ -46,7 +46,7 @@ namespace CapaDatos
             return tabla;
         }
 
-        public DataTable BuscarProfesor(Entidades_Profesor Profesor)
+        public DataTable BuscarProfesor(string buscar)
         {
             DataTable tabla = new DataTable();
             SqlCommand cmd = new SqlCommand("SP_BUSCARPROFESOR", conexion);
@@ -54,7 +54,7 @@ namespace CapaDatos
             conexion.Open();
 
 
-            cmd.Parameters.AddWithValue("@BUSCAR", Profesor.Buscar1);
+            cmd.Parameters.AddWithValue("@BUSCAR",buscar);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
