@@ -63,10 +63,10 @@
     <Compile Include="FormsDeportes\FormMantenimientoDeporte.Designer.cs">
       <DependentUpon>FormMantenimientoDeporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSocio.cs">
+    <Compile Include="FormsSocio\FormSocio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSocio.Designer.cs">
+    <Compile Include="FormsSocio\FormSocio.Designer.cs">
       <DependentUpon>FormSocio.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsProfesor\FormMantenimientoProfesor.cs">
@@ -133,7 +133,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FormsSocio\" />
     <Folder Include="images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
