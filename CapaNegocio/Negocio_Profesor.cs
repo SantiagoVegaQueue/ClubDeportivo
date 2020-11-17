@@ -49,9 +49,9 @@ namespace CapaNegocio
             return datos_Profesor.BuscarProfesor(entidades_Profesor);
         }
 
-        public void InsertarProfesor()
+        public void InsertarProfesor(string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Direccion1, long Telefono1, string Email1)
         {
-            datos_Profesor.InsertarProfesor();
+            datos_Profesor.InsertarProfesor(Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Direccion1, Telefono1, Email1);
         }
 
         public void EditarProfesor(Entidades_Profesor Profesor)
