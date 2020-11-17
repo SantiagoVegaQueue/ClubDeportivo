@@ -24,7 +24,7 @@ namespace CapaNegocio
         private string Buscar;
 
         Datos_Profesor datos_Profesor = new Datos_Profesor();
-        Entidades_Profesor entidades_Profesor = new Entidades_Profesor();
+        
 
         public int IdProfesor { get => idProfesor; set => idProfesor = value; }
         public string Codigo1 { get => Codigo; set => Codigo = value; }
@@ -49,9 +49,9 @@ namespace CapaNegocio
             return datos_Profesor.BuscarProfesor(entidades_Profesor);
         }
 
-        public void InsertarProfesor(Entidades_Profesor Profesor)
+        public void InsertarProfesor()
         {
-            datos_Profesor.InsertarProfesor(Profesor);
+            datos_Profesor.InsertarProfesor();
         }
 
         public void EditarProfesor(Entidades_Profesor Profesor)

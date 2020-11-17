@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades_Deporte.cs" />
-    <Compile Include="Entidades_Profesor.cs" />
     <Compile Include="Entidades_Socio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
