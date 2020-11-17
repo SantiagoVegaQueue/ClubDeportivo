@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormMantenimientoSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMantenimientoSocio.Designer.cs">
+      <DependentUpon>FormMantenimientoSocio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSocios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMantenimientoSocio.resx">
+      <DependentUpon>FormMantenimientoSocio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsDeportes\FormDeporte.resx">
       <DependentUpon>FormDeporte.cs</DependentUpon>
     </EmbeddedResource>
