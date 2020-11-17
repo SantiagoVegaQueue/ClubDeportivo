@@ -31,7 +31,7 @@ namespace CapaDatos
             return tabla;
         }
 
-        public DataTable BuscarDeporte(Entidades_Deporte Deporte)
+        public DataTable BuscarDeporte(string buscar)
         {
             DataTable tabla = new DataTable();
             SqlCommand cmd = new SqlCommand("SP_BUSCARDEPORTE", conexion);
@@ -39,7 +39,7 @@ namespace CapaDatos
             conexion.Open();
 
 
-            cmd.Parameters.AddWithValue("@BUSCAR", Deporte.Buscar1);
+            cmd.Parameters.AddWithValue("@BUSCAR", buscar);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
@@ -49,16 +49,16 @@ namespace CapaDatos
             return tabla;
         }
 
-        public void InsertarDeporte(Entidades_Deporte Deporte)
+        public void InsertarDeporte(string nombre, string dias, string horarios, int idProf)
         {
             SqlCommand cmd = new SqlCommand("SP_INSERTARDEPORTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@NOMBRE", Deporte.Nombre1);
-            cmd.Parameters.AddWithValue("@DIAS", Deporte.Dias1);
-            cmd.Parameters.AddWithValue("@HORARIOS", Deporte.Horarios1);
-            cmd.Parameters.AddWithValue("@IDPROFESOR", Deporte.IdProfesor);
+            cmd.Parameters.AddWithValue("@NOMBRE", nombre);
+            cmd.Parameters.AddWithValue("@DIAS", dias);
+            cmd.Parameters.AddWithValue("@HORARIOS", horarios);
+            cmd.Parameters.AddWithValue("@IDPROFESOR", idProf);
 
             cmd.ExecuteNonQuery();
 
@@ -66,30 +66,30 @@ namespace CapaDatos
 
         }
 
-        public void EditarDeporte(Entidades_Deporte Deporte)
+        public void EditarDeporte(int idDepo, string nombre, string dias, string horarios, int idProf)
         {
             SqlCommand cmd = new SqlCommand("SP_EDITARDEPORTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@IDDEPORTE", Deporte.IdDeporte);
-            cmd.Parameters.AddWithValue("@NOMBRE", Deporte.Nombre1);
-            cmd.Parameters.AddWithValue("@DIAS", Deporte.Dias1);
-            cmd.Parameters.AddWithValue("@HORARIOS", Deporte.Horarios1);
-            cmd.Parameters.AddWithValue("@IDPROFESOR", Deporte.IdProfesor);
+            cmd.Parameters.AddWithValue("@IDDEPORTE", idDepo);
+            cmd.Parameters.AddWithValue("@NOMBRE", nombre);
+            cmd.Parameters.AddWithValue("@DIAS", dias);
+            cmd.Parameters.AddWithValue("@HORARIOS", horarios);
+            cmd.Parameters.AddWithValue("@IDPROFESOR", idProf);
 
             cmd.ExecuteNonQuery();
 
             conexion.Close();
         }
 
-        public void EliminarDeporte(Entidades_Deporte Deporte)
+        public void EliminarDeporte(int idDepo)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARDEPORTE", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@IDDEPORTE", Deporte.IdDeporte);
+            cmd.Parameters.AddWithValue("@IDDEPORTE", idDepo);
 
             cmd.ExecuteNonQuery();
 

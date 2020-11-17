@@ -13,14 +13,11 @@ namespace CapaPresentacion
 {
     public partial class FormDeporte : Form
     {
-        Entidades_Deporte entidades_Deporte = new Entidades_Deporte();
         Negocio_Deporte negocio_Deporte = new Negocio_Deporte();
         public FormDeporte()
         {
             InitializeComponent();
         }
-
-      
 
         private void FormDeporte_Load(object sender, EventArgs e)
         {
@@ -100,8 +97,8 @@ namespace CapaPresentacion
         {
             if (tablaDeporte.SelectedRows.Count > 0)
             {
-                entidades_Deporte.IdDeporte = Convert.ToInt32(tablaDeporte.CurrentRow.Cells[0].Value.ToString());
-                negocio_Deporte.EliminarDeporte(entidades_Deporte);
+                int idDeporte = Convert.ToInt32(tablaDeporte.CurrentRow.Cells[0].Value.ToString());
+                negocio_Deporte.EliminarDeporte(idDeporte);
 
                 MessageBox.Show("Se elimino");
                 ListarDeporte();

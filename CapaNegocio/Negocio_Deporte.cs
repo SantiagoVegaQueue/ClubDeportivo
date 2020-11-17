@@ -39,23 +39,22 @@ namespace CapaNegocio
 
         public DataTable BuscarDeporte(string Buscar)
         {
-            entidades_Deporte.Buscar1 = Buscar;
-            return datos_Deporte.BuscarDeporte(entidades_Deporte);
+            return datos_Deporte.BuscarDeporte(Buscar);
         }
 
-        public void InsertarDeporte(Entidades_Deporte Deporte)
+        public void InsertarDeporte(string Nombre1, string Dias1, string Horarios1, int IdProfesor)
         {
-            datos_Deporte.InsertarDeporte(Deporte);
+            datos_Deporte.InsertarDeporte(Nombre1, Dias1, Horarios1, IdProfesor);
         }
 
-        public void EditarDeporte(Entidades_Deporte Deporte)
+        public void EditarDeporte(int IdDeporte, string Nombre1, string Dias1, string Horarios1, int IdProfesor)
         {
-            datos_Deporte.EditarDeporte(Deporte);
+            datos_Deporte.EditarDeporte(IdDeporte, Nombre1, Dias1, Horarios1, IdProfesor);
         }
 
-        public void EliminarDeporte(Entidades_Deporte Deporte)
+        public void EliminarDeporte(int IdDeporte)
         {
-            datos_Deporte.EliminarDeporte(Deporte);
+            datos_Deporte.EliminarDeporte(IdDeporte);
         }
     }
 }

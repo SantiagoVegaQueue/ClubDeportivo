@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaEntidades;
 using CapaNegocio;
 
 namespace CapaPresentacion
 {
     public partial class FormMantenimientoDeporte : Form
     {
-        Entidades_Deporte entidades_Deporte = new Entidades_Deporte();
+        
         Negocio_Deporte negocio_Deporte = new Negocio_Deporte();
         public string idProf;
         public bool editar = false;
@@ -77,13 +76,13 @@ namespace CapaPresentacion
                     if (tablaListaProfesores.SelectedRows.Count > 0)
                     {
                         idProf = tablaListaProfesores.CurrentRow.Cells[0].Value.ToString();
-                        entidades_Deporte.Nombre1 = txtBoxNombreDeporte.Text;
-                        entidades_Deporte.Horarios1 = comboBoxHorarios.Text;
-                        entidades_Deporte.Dias1 = comboBoxDiasDeporte.Text;
-                        entidades_Deporte.IdProfesor = Convert.ToInt32(idProf);
+                        string nombre = txtBoxNombreDeporte.Text;
+                        string horarios = comboBoxHorarios.Text;
+                        string dias = comboBoxDiasDeporte.Text;
+                        int idProfesor = Convert.ToInt32(idProf);
                         
 
-                        negocio_Deporte.InsertarDeporte(entidades_Deporte);
+                        negocio_Deporte.InsertarDeporte(nombre, dias, horarios, idProfesor);
 
                         Close();
                     }
@@ -106,13 +105,13 @@ namespace CapaPresentacion
                     if (tablaListaProfesores.SelectedRows.Count>0)
                     {
                         idProf = tablaListaProfesores.CurrentRow.Cells[0].Value.ToString();
-                        entidades_Deporte.IdDeporte = Convert.ToInt32(txtBoxIdDeporte.Text);
-                        entidades_Deporte.Nombre1 = txtBoxNombreDeporte.Text;
-                        entidades_Deporte.Horarios1 = comboBoxHorarios.Text;
-                        entidades_Deporte.Dias1 = comboBoxDiasDeporte.Text;
-                        entidades_Deporte.IdProfesor = Convert.ToInt32(idProf);
+                        int idDeporte = Convert.ToInt32(txtBoxIdDeporte.Text);
+                        string nombre = txtBoxNombreDeporte.Text;
+                        string horarios = comboBoxHorarios.Text;
+                        string dias = comboBoxDiasDeporte.Text;
+                        int idProfesor = Convert.ToInt32(idProf);
 
-                        negocio_Deporte.EditarDeporte(entidades_Deporte);
+                        negocio_Deporte.EditarDeporte(idDeporte, nombre, horarios, dias, idProfesor);
 
 
 
