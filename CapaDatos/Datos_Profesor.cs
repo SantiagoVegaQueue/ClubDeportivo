@@ -85,21 +85,21 @@ namespace CapaDatos
 
         }
 
-        public void EditarProfesor(Entidades_Profesor Profesor)
+        public void EditarProfesor(int idProfe, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string direccion, long telefono, string email)
         {
             SqlCommand cmd = new SqlCommand("SP_EDITARPROFESOR", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@IDPROFESOR", Profesor.IdProfesor);
-            cmd.Parameters.AddWithValue("@NOMBRE", Profesor.Nombre1);
-            cmd.Parameters.AddWithValue("@APELLIDO", Profesor.Apellido1);
-            cmd.Parameters.AddWithValue("@SEXO", Profesor.Sexo1);
-            cmd.Parameters.AddWithValue("@DNI", Profesor.Dni1);
-            cmd.Parameters.AddWithValue("@FECHANAC", Profesor.Fechanac1);
-            cmd.Parameters.AddWithValue("@DIRECCION", Profesor.Direccion1);
-            cmd.Parameters.AddWithValue("@TELEFONO", Profesor.Telefono1);
-            cmd.Parameters.AddWithValue("@EMAIL", Profesor.Email1);
+            cmd.Parameters.AddWithValue("@IDPROFESOR", idProfe);
+            cmd.Parameters.AddWithValue("@NOMBRE", nombre);
+            cmd.Parameters.AddWithValue("@APELLIDO", apellido);
+            cmd.Parameters.AddWithValue("@SEXO", sexo);
+            cmd.Parameters.AddWithValue("@DNI", dni);
+            cmd.Parameters.AddWithValue("@FECHANAC", fechanac);
+            cmd.Parameters.AddWithValue("@DIRECCION", direccion);
+            cmd.Parameters.AddWithValue("@TELEFONO", telefono);
+            cmd.Parameters.AddWithValue("@EMAIL", email);
 
             cmd.ExecuteNonQuery();
 

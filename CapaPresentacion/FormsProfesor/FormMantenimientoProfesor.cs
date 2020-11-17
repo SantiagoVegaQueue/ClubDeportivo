@@ -59,17 +59,17 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    entidades_Profesor.IdProfesor = Convert.ToInt32(txtBoxIdProfesor.Text);
-                    entidades_Profesor.Nombre1 = txtBoxNombreProfesor.Text;
-                    entidades_Profesor.Apellido1 = txtBoxApellidoProfesor.Text;
-                    entidades_Profesor.Sexo1 = comboBoxSexoProfesor.Text;
-                    entidades_Profesor.Dni1 = Convert.ToInt32(txtBoxDniProfesor.Text);
-                    entidades_Profesor.Fechanac1 = datePickerFechaNacProfesor.Value.Date;
-                    entidades_Profesor.Direccion1 = txtBoxDireccionProfesor.Text;
-                    entidades_Profesor.Telefono1 = Convert.ToInt64(txtBoxTelefonoProfesor.Text);
-                    entidades_Profesor.Email1 = txtBoxEmailProfesor.Text;
+                    int idProfe = Convert.ToInt32(txtBoxIdProfesor.Text);
+                    string nombre = txtBoxNombreProfesor.Text;
+                    string apellido = txtBoxApellidoProfesor.Text;
+                    string sexo = comboBoxSexoProfesor.Text;
+                    int dni = Convert.ToInt32(txtBoxDniProfesor.Text);
+                    DateTime fechanac = datePickerFechaNacProfesor.Value.Date;
+                    string direccion = txtBoxDireccionProfesor.Text;
+                    long telefono = Convert.ToInt64(txtBoxTelefonoProfesor.Text);
+                    string email = txtBoxEmailProfesor.Text;
 
-                    negocio_Profesor.EditarProfesor(entidades_Profesor);
+                    negocio_Profesor.EditarProfesor(idProfe, nombre, apellido, sexo, dni, fechanac, direccion, telefono, email);
                    
                     Close();
                     editar = false;
