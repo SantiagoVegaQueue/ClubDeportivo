@@ -78,7 +78,7 @@ namespace CapaDatos
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
-            cmd.Parameters.AddWithValue("@IDPROFESOR", idSocio);
+            cmd.Parameters.AddWithValue("@IDSOCIO", idSocio);
             cmd.Parameters.AddWithValue("@NOMBRE", nombre);
             cmd.Parameters.AddWithValue("@APELLIDO", apellido);
             cmd.Parameters.AddWithValue("@SEXO", sexo);
