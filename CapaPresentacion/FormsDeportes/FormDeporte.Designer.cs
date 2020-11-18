@@ -272,7 +272,7 @@
             this.tablaDeporte.ReadOnly = true;
             this.tablaDeporte.RowHeadersVisible = false;
             this.tablaDeporte.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tablaDeporte.Size = new System.Drawing.Size(585, 551);
+            this.tablaDeporte.Size = new System.Drawing.Size(1144, 551);
             this.tablaDeporte.TabIndex = 53;
             // 
             // FormDeporte

@@ -22,10 +22,11 @@ namespace CapaPresentacion
         private void FormDeporte_Load(object sender, EventArgs e)
         {
             ListarDeporte();
-            diseñoTablaDeporte();
+            DiseñoTablaDeporte();
+            tablaDeporte.ClearSelection();
         }
 
-        public void diseñoTablaDeporte()
+        public void DiseñoTablaDeporte()
         {
             tablaDeporte.Columns[0].Visible = false;
             tablaDeporte.Columns[1].Visible = false;
@@ -34,7 +35,7 @@ namespace CapaPresentacion
         }
 
 
-        #region ListarProfesor
+        #region Listar deporte
         public void ListarDeporte()
         {
             Negocio_Deporte deporte = new Negocio_Deporte();
@@ -43,7 +44,7 @@ namespace CapaPresentacion
 
         #endregion
 
-        #region Buscar profesor
+        #region Buscar deporte
         public void BuscarDeporte(string buscar)
         {
             Negocio_Deporte deporte = new Negocio_Deporte();

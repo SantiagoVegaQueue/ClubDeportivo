@@ -25,7 +25,7 @@ namespace CapaPresentacion
         public FormProfesor()
         {
             InitializeComponent();
-            tablaProfesor.ClearSelection();
+            
             listarProfesor();
         }
 
@@ -33,7 +33,8 @@ namespace CapaPresentacion
         {
             listarProfesor();
             diseñoTablaProfesor();
-            
+            tablaProfesor.ClearSelection();
+
         }
 
         #region Diseño e utilidades formulario
@@ -82,10 +83,10 @@ namespace CapaPresentacion
         private void btnAgregarProfesor_Click(object sender, EventArgs e)
         {
 
-            FormMantenimientoProfesor formMantenimientoProfesor = new FormMantenimientoProfesor();
-            
-            formMantenimientoProfesor.ShowDialog();
-            formMantenimientoProfesor.editar = false;
+            FormMantenimientoProfesor form = new FormMantenimientoProfesor();
+
+            form.ShowDialog();
+            form.editar = false;
             listarProfesor();
 
             /*(if (!editar)
@@ -151,20 +152,20 @@ namespace CapaPresentacion
                 DateTime fechanac;
                 DateTime.TryParse(tablaProfesor.CurrentRow.Cells[6].Value.ToString(),out fechanac);
 
-                FormMantenimientoProfesor formMantenimientoProfesor = new FormMantenimientoProfesor();
+                FormMantenimientoProfesor form = new FormMantenimientoProfesor();
 
-                formMantenimientoProfesor.editar = true;
+                form.editar = true;
 
-                formMantenimientoProfesor.txtBoxIdProfesor.Text = tablaProfesor.CurrentRow.Cells[0].Value.ToString();
-                formMantenimientoProfesor.txtBoxNombreProfesor.Text = tablaProfesor.CurrentRow.Cells[2].Value.ToString();
-                formMantenimientoProfesor.txtBoxApellidoProfesor.Text = tablaProfesor.CurrentRow.Cells[3].Value.ToString();
-                formMantenimientoProfesor.comboBoxSexoProfesor.Text = tablaProfesor.CurrentRow.Cells[4].Value.ToString();
-                formMantenimientoProfesor.txtBoxDniProfesor.Text = tablaProfesor.CurrentRow.Cells[5].Value.ToString();
-                formMantenimientoProfesor.datePickerFechaNacProfesor.Value = fechanac;
-                formMantenimientoProfesor.txtBoxDireccionProfesor.Text = tablaProfesor.CurrentRow.Cells[7].Value.ToString();
-                formMantenimientoProfesor.txtBoxTelefonoProfesor.Text = tablaProfesor.CurrentRow.Cells[8].Value.ToString();
-                formMantenimientoProfesor.txtBoxEmailProfesor.Text = tablaProfesor.CurrentRow.Cells[9].Value.ToString();
-                formMantenimientoProfesor.ShowDialog();
+                form.txtBoxIdProfesor.Text = tablaProfesor.CurrentRow.Cells[0].Value.ToString();
+                form.txtBoxNombreProfesor.Text = tablaProfesor.CurrentRow.Cells[2].Value.ToString();
+                form.txtBoxApellidoProfesor.Text = tablaProfesor.CurrentRow.Cells[3].Value.ToString();
+                form.comboBoxSexoProfesor.Text = tablaProfesor.CurrentRow.Cells[4].Value.ToString();
+                form.txtBoxDniProfesor.Text = tablaProfesor.CurrentRow.Cells[5].Value.ToString();
+                form.datePickerFechaNacProfesor.Value = fechanac;
+                form.txtBoxDireccionProfesor.Text = tablaProfesor.CurrentRow.Cells[7].Value.ToString();
+                form.txtBoxTelefonoProfesor.Text = tablaProfesor.CurrentRow.Cells[8].Value.ToString();
+                form.txtBoxEmailProfesor.Text = tablaProfesor.CurrentRow.Cells[9].Value.ToString();
+                form.ShowDialog();
                 listarProfesor();
 
             }

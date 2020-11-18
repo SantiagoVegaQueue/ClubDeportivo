@@ -25,6 +25,7 @@ namespace CapaPresentacion
         {
             ListarSocio();
             DiseñoTabla();
+            dgvSocios.ClearSelection();
         }
 
         public void ListarSocio()
