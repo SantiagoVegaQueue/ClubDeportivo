@@ -51,16 +51,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMantenimientoSocio.cs">
+    <Compile Include="FormsSocio\FormMantenimientoSocio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMantenimientoSocio.Designer.cs">
+    <Compile Include="FormsSocio\FormMantenimientoSocio.Designer.cs">
       <DependentUpon>FormMantenimientoSocio.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSocios.cs">
+    <Compile Include="FormsSocio\FormSocios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSocios.Designer.cs">
+    <Compile Include="FormsSocio\FormSocios.Designer.cs">
       <DependentUpon>FormSocios.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsDeportes\FormDeporte.cs">
@@ -95,7 +95,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormMantenimientoSocio.resx">
+    <EmbeddedResource Include="FormsSocio\FormMantenimientoSocio.resx">
       <DependentUpon>FormMantenimientoSocio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDeportes\FormDeporte.resx">
@@ -104,7 +104,7 @@
     <EmbeddedResource Include="FormsDeportes\FormMantenimientoDeporte.resx">
       <DependentUpon>FormMantenimientoDeporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSocios.resx">
+    <EmbeddedResource Include="FormsSocio\FormSocios.resx">
       <DependentUpon>FormSocios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsProfesor\FormMantenimientoProfesor.resx">
