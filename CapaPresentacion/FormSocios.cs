@@ -24,6 +24,7 @@ namespace CapaPresentacion
         private void FormSocios_Load(object sender, EventArgs e)
         {
             ListarSocio();
+            DiseñoTabla();
         }
 
         public void ListarSocio()
@@ -43,7 +44,11 @@ namespace CapaPresentacion
         {
 
         }
-
+        public void DiseñoTabla()
+        {
+            dgvSocios.Columns[0].Visible = false;
+            dgvSocios.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
         private void btnEditarSocio_Click(object sender, EventArgs e)
         {
             if (dgvSocios.SelectedRows.Count>0)
