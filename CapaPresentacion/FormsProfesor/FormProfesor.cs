@@ -14,8 +14,9 @@ namespace CapaPresentacion
     public partial class FormProfesor : Form
     {
         Negocio_Profesor negocioProfesor = new Negocio_Profesor();
+
         
-        
+
         private string idProfesor;
         public string IdProfesor { get => idProfesor; set => idProfesor = value; }
 
@@ -147,14 +148,19 @@ namespace CapaPresentacion
         {
             if (tablaProfesor.SelectedRows.Count > 0)
             {
+                DateTime fechanac;
+                DateTime.TryParse(tablaProfesor.CurrentRow.Cells[6].Value.ToString(),out fechanac);
+
                 FormMantenimientoProfesor formMantenimientoProfesor = new FormMantenimientoProfesor();
+
                 formMantenimientoProfesor.editar = true;
+
                 formMantenimientoProfesor.txtBoxIdProfesor.Text = tablaProfesor.CurrentRow.Cells[0].Value.ToString();
                 formMantenimientoProfesor.txtBoxNombreProfesor.Text = tablaProfesor.CurrentRow.Cells[2].Value.ToString();
                 formMantenimientoProfesor.txtBoxApellidoProfesor.Text = tablaProfesor.CurrentRow.Cells[3].Value.ToString();
                 formMantenimientoProfesor.comboBoxSexoProfesor.Text = tablaProfesor.CurrentRow.Cells[4].Value.ToString();
                 formMantenimientoProfesor.txtBoxDniProfesor.Text = tablaProfesor.CurrentRow.Cells[5].Value.ToString();
-                formMantenimientoProfesor.datePickerFechaNacProfesor.Text = tablaProfesor.CurrentRow.Cells[6].Value.ToString();
+                formMantenimientoProfesor.datePickerFechaNacProfesor.Value = fechanac;
                 formMantenimientoProfesor.txtBoxDireccionProfesor.Text = tablaProfesor.CurrentRow.Cells[7].Value.ToString();
                 formMantenimientoProfesor.txtBoxTelefonoProfesor.Text = tablaProfesor.CurrentRow.Cells[8].Value.ToString();
                 formMantenimientoProfesor.txtBoxEmailProfesor.Text = tablaProfesor.CurrentRow.Cells[9].Value.ToString();

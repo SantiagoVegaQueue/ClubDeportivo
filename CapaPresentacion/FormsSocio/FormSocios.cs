@@ -55,6 +55,9 @@ namespace CapaPresentacion
             {
                 FormMantenimientoSocio form = new FormMantenimientoSocio();
 
+                DateTime fechanac;
+                DateTime.TryParse(dgvSocios.CurrentRow.Cells[6].Value.ToString(), out fechanac);
+
                 form.editar = true;
 
                 form.txtBoxIdSocio.Text = dgvSocios.CurrentRow.Cells[0].Value.ToString();
@@ -62,7 +65,7 @@ namespace CapaPresentacion
                 form.txtBoxApellidoSocio.Text = dgvSocios.CurrentRow.Cells[3].Value.ToString();
                 form.comboBoxSexoSocio.Text = dgvSocios.CurrentRow.Cells[4].Value.ToString();
                 form.txtBoxDniSocio.Text = dgvSocios.CurrentRow.Cells[5].Value.ToString();
-                form.datePickerFechaNacSocio.Text = dgvSocios.CurrentRow.Cells[6].Value.ToString();
+                form.datePickerFechaNacSocio.Value = fechanac;
                 form.txtBoxNacionalidadSocio.Text = dgvSocios.CurrentRow.Cells[7].Value.ToString();
                 form.comboBoxEstadoCivil.Text = dgvSocios.CurrentRow.Cells[8].Value.ToString();
                 form.txtBoxDireccionSocio.Text = dgvSocios.CurrentRow.Cells[9].Value.ToString();
