@@ -79,5 +79,21 @@ namespace CapaPresentacion
                 MessageBox.Show("Elija una fila");
             }
         }
+
+        private void btnEliminarSocio_Click(object sender, EventArgs e)
+        {
+            if (dgvSocios.SelectedRows.Count > 0)
+            {
+                int idSocio = Convert.ToInt32(dgvSocios.CurrentRow.Cells[0].Value.ToString());
+                Socio.EliminarSocio(idSocio);
+
+                MessageBox.Show("Se elimino");
+                ListarSocio();
+            }
+            else
+            {
+                MessageBox.Show("Elija una fila");
+            }
+        }
     }
 }
