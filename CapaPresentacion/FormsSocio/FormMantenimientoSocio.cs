@@ -13,7 +13,7 @@ namespace CapaPresentacion
 {
     public partial class FormMantenimientoSocio : Form
     {
-        Negocio_Socio Socio = new Negocio_Socio();
+        
         public bool editar = false;
 
         public FormMantenimientoSocio()
@@ -32,6 +32,7 @@ namespace CapaPresentacion
             {
                 try
                 {
+                    Negocio_Socio Socio = new Negocio_Socio();
                     string nombre = txtBoxNombreSocio.Text;
                     string apellido = txtBoxApellidoSocio.Text;
                     string sexo = comboBoxSexoSocio.Text;
@@ -57,6 +58,8 @@ namespace CapaPresentacion
             {
                 try
                 {
+                    Negocio_Socio Socio = new Negocio_Socio();
+
                     int idSocio = Convert.ToInt32(txtBoxIdSocio.Text);
                     string nombre = txtBoxNombreSocio.Text;
                     string apellido = txtBoxApellidoSocio.Text;

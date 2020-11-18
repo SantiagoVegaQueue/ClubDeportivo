@@ -16,7 +16,7 @@ namespace CapaPresentacion
     {
         FormProfesor formProfesor = new FormProfesor();
         
-        Negocio_Profesor negocio_Profesor = new Negocio_Profesor();
+        
         public bool editar = false;
 
         public FormMantenimientoProfesor()
@@ -31,23 +31,23 @@ namespace CapaPresentacion
 
         private void btnGuardarProfesor_Click(object sender, EventArgs e)
         {
+            Validaciones.ValidarCampos(ref txtBoxNombreProfesor, "string");
+            Validaciones.ValidarCampos(ref txtBoxApellidoProfesor, "string");
+            Validaciones.ValidarCampos(ref txtBoxDireccionProfesor, "string");
+            Validaciones.ValidarCampos(ref txtBoxDniProfesor, "int");
+            Validaciones.ValidarCampos(ref txtBoxTelefonoProfesor, "long");
+            Validaciones.ValidarCampos(ref txtBoxEmailProfesor, "string");
+            Validaciones.ValidarCampoCombo(ref comboBoxSexoProfesor, "string");
+
             if (!editar)
             {
                 try
                 {
-                    string nombre = txtBoxNombreProfesor.Text;
-                    string apellido = txtBoxApellidoProfesor.Text;
-                    string sexo = comboBoxSexoProfesor.Text;
-                    int dni = Convert.ToInt32(txtBoxDniProfesor.Text);
-                    DateTime fechanac = datePickerFechaNacProfesor.Value.Date;
-                    string direccion = txtBoxDireccionProfesor.Text;
-                    long telefono = Convert.ToInt64(txtBoxTelefonoProfesor.Text);
-                    string email = txtBoxEmailProfesor.Text;
-
-                    negocio_Profesor.InsertarProfesor(nombre, apellido, sexo, dni, fechanac, direccion, telefono, email);
+                    Negocio_Profesor profesor = new Negocio_Profesor();
+             
+                    profesor.InsertarProfesor(txtBoxNombreProfesor.Text, txtBoxApellidoProfesor.Text, comboBoxSexoProfesor.Text, Convert.ToInt32(txtBoxDniProfesor.Text), datePickerFechaNacProfesor.Value.Date, txtBoxDireccionProfesor.Text, Convert.ToInt64(txtBoxTelefonoProfesor.Text), txtBoxEmailProfesor.Text);
                    
                     Close();
-                    
 
                 }
                 catch (Exception ex)
@@ -57,20 +57,13 @@ namespace CapaPresentacion
             }
             if (editar)
             {
+
                 try
                 {
-                    int idProfe = Convert.ToInt32(txtBoxIdProfesor.Text);
-                    string nombre = txtBoxNombreProfesor.Text;
-                    string apellido = txtBoxApellidoProfesor.Text;
-                    string sexo = comboBoxSexoProfesor.Text;
-                    int dni = Convert.ToInt32(txtBoxDniProfesor.Text);
-                    DateTime fechanac = datePickerFechaNacProfesor.Value.Date;
-                    string direccion = txtBoxDireccionProfesor.Text;
-                    long telefono = Convert.ToInt64(txtBoxTelefonoProfesor.Text);
-                    string email = txtBoxEmailProfesor.Text;
+                    Negocio_Profesor profesor = new Negocio_Profesor();
 
-                    negocio_Profesor.EditarProfesor(idProfe, nombre, apellido, sexo, dni, fechanac, direccion, telefono, email);
-                   
+                    profesor.EditarProfesor(Convert.ToInt32(txtBoxIdProfesor.Text), txtBoxNombreProfesor.Text, txtBoxApellidoProfesor.Text, comboBoxSexoProfesor.Text, Convert.ToInt32(txtBoxDniProfesor.Text), datePickerFechaNacProfesor.Value.Date, txtBoxDireccionProfesor.Text, Convert.ToInt64(txtBoxTelefonoProfesor.Text), txtBoxEmailProfesor.Text);
+
                     Close();
                     editar = false;
                 }

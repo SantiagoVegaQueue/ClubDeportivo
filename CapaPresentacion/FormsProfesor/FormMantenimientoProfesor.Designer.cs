@@ -58,16 +58,18 @@
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cerrarVentana)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBoxNombreProfesor
             // 
-            this.txtBoxNombreProfesor.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.txtBoxNombreProfesor.BorderColorFocused = System.Drawing.Color.LimeGreen;
             this.txtBoxNombreProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxNombreProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxNombreProfesor.BorderThickness = 1;
+            this.txtBoxNombreProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxNombreProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxNombreProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxNombreProfesor.isPassword = false;
@@ -127,6 +129,7 @@
             this.txtBoxIdProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxIdProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxIdProfesor.BorderThickness = 1;
+            this.txtBoxIdProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxIdProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxIdProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxIdProfesor.isPassword = false;
@@ -158,6 +161,7 @@
             this.btnGuardarProfesor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardarProfesor.BorderRadius = 7;
             this.btnGuardarProfesor.ButtonText = "Guardar";
+            this.btnGuardarProfesor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardarProfesor.DisabledColor = System.Drawing.Color.Gray;
             this.btnGuardarProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarProfesor.Iconcolor = System.Drawing.Color.Transparent;
@@ -189,10 +193,11 @@
             // 
             // txtBoxApellidoProfesor
             // 
-            this.txtBoxApellidoProfesor.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.txtBoxApellidoProfesor.BorderColorFocused = System.Drawing.Color.LimeGreen;
             this.txtBoxApellidoProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxApellidoProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxApellidoProfesor.BorderThickness = 1;
+            this.txtBoxApellidoProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxApellidoProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxApellidoProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxApellidoProfesor.isPassword = false;
@@ -216,10 +221,11 @@
             // 
             // txtBoxDniProfesor
             // 
-            this.txtBoxDniProfesor.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.txtBoxDniProfesor.BorderColorFocused = System.Drawing.Color.LimeGreen;
             this.txtBoxDniProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxDniProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxDniProfesor.BorderThickness = 1;
+            this.txtBoxDniProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxDniProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDniProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxDniProfesor.isPassword = false;
@@ -245,14 +251,15 @@
             // 
             this.comboBoxSexoProfesor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.comboBoxSexoProfesor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxSexoProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSexoProfesor.FormattingEnabled = true;
             this.comboBoxSexoProfesor.Items.AddRange(new object[] {
             "Masculino\t",
             "Femenino",
             "Sin Especificar"});
-            this.comboBoxSexoProfesor.Location = new System.Drawing.Point(16, 252);
+            this.comboBoxSexoProfesor.Location = new System.Drawing.Point(16, 249);
             this.comboBoxSexoProfesor.Name = "comboBoxSexoProfesor";
-            this.comboBoxSexoProfesor.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxSexoProfesor.Size = new System.Drawing.Size(200, 24);
             this.comboBoxSexoProfesor.TabIndex = 52;
             // 
             // bunifuCustomLabel5
@@ -304,10 +311,11 @@
             // 
             // txtBoxEmailProfesor
             // 
-            this.txtBoxEmailProfesor.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtBoxEmailProfesor.BorderColorFocused = System.Drawing.Color.LimeGreen;
             this.txtBoxEmailProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBoxEmailProfesor.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtBoxEmailProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxEmailProfesor.BorderThickness = 1;
+            this.txtBoxEmailProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxEmailProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxEmailProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxEmailProfesor.isPassword = false;
@@ -331,10 +339,11 @@
             // 
             // txtBoxDireccionProfesor
             // 
-            this.txtBoxDireccionProfesor.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtBoxDireccionProfesor.BorderColorFocused = System.Drawing.Color.LimeGreen;
             this.txtBoxDireccionProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBoxDireccionProfesor.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtBoxDireccionProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxDireccionProfesor.BorderThickness = 1;
+            this.txtBoxDireccionProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxDireccionProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDireccionProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxDireccionProfesor.isPassword = false;
@@ -358,10 +367,11 @@
             // 
             // txtBoxTelefonoProfesor
             // 
-            this.txtBoxTelefonoProfesor.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtBoxTelefonoProfesor.BorderColorFocused = System.Drawing.Color.LimeGreen;
             this.txtBoxTelefonoProfesor.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtBoxTelefonoProfesor.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtBoxTelefonoProfesor.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
             this.txtBoxTelefonoProfesor.BorderThickness = 1;
+            this.txtBoxTelefonoProfesor.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBoxTelefonoProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxTelefonoProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxTelefonoProfesor.isPassword = false;
@@ -422,6 +432,11 @@
             this.bunifuDragControl2.Horizontal = true;
             this.bunifuDragControl2.TargetControl = null;
             this.bunifuDragControl2.Vertical = true;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // FormMantenimientoProfesor
             // 
@@ -495,5 +510,6 @@
         public System.Windows.Forms.ComboBox comboBoxSexoProfesor;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
