@@ -51,6 +51,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormsEmergentes\FormAdvertencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsEmergentes\FormAdvertencia.Designer.cs">
+      <DependentUpon>FormAdvertencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsEmergentes\FormNotificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsEmergentes\FormNotificacion.Designer.cs">
+      <DependentUpon>FormNotificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsEmergentes\FormExito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsEmergentes\FormExito.Designer.cs">
+      <DependentUpon>FormExito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSocio\FormSocioPleno\FormMantenimientoSocioPleno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSocio\FormSocioPleno\FormMantenimientoSocioPleno.Designer.cs">
+      <DependentUpon>FormMantenimientoSocioPleno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSocio\FormSocioPleno\FormSocioPleno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSocio\FormSocioPleno\FormSocioPleno.Designer.cs">
+      <DependentUpon>FormSocioPleno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSocio\FormSocioDeportivo\FormMantenimientoSocioDeportivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSocio\FormSocioDeportivo\FormMantenimientoSocioDeportivo.Designer.cs">
+      <DependentUpon>FormMantenimientoSocioDeportivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSocio\FormSocioDeportivo\FormSocioDeportivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSocio\FormSocioDeportivo\FormSocioDeportivo.Designer.cs">
+      <DependentUpon>FormSocioDeportivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSocio\FormSocio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +138,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validaciones.cs" />
+    <EmbeddedResource Include="FormsEmergentes\FormAdvertencia.resx">
+      <DependentUpon>FormAdvertencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsEmergentes\FormExito.resx">
+      <DependentUpon>FormExito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsEmergentes\FormNotificacion.resx">
+      <DependentUpon>FormNotificacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSocio\FormSocio.resx">
       <DependentUpon>FormSocio.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +158,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsDeportes\FormMantenimientoDeporte.resx">
       <DependentUpon>FormMantenimientoDeporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSocio\FormSocioDeportivo\FormSocioDeportivo.resx">
+      <DependentUpon>FormSocioDeportivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSocio\FormSocioPleno\FormMantenimientoSocioPleno.resx">
+      <DependentUpon>FormMantenimientoSocioPleno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSocio\FormSocioPleno\FormSocioPleno.resx">
+      <DependentUpon>FormSocioPleno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsProfesor\FormMantenimientoProfesor.resx">
       <DependentUpon>FormMantenimientoProfesor.cs</DependentUpon>

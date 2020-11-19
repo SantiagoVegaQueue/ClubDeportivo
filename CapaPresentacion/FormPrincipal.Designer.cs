@@ -199,6 +199,7 @@
             this.btnSocios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSocios.UseVisualStyleBackColor = true;
             this.btnSocios.Click += new System.EventHandler(this.btnSocios_Click);
+            this.btnSocios.MouseHover += new System.EventHandler(this.btnSocios_MouseHover);
             // 
             // btnInicio
             // 
@@ -276,6 +277,7 @@
             this.panelContedorDeForms.Name = "panelContedorDeForms";
             this.panelContedorDeForms.Size = new System.Drawing.Size(1170, 723);
             this.panelContedorDeForms.TabIndex = 10;
+            this.panelContedorDeForms.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContedorDeForms_Paint);
             // 
             // bunifuDragControl6
             // 

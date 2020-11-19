@@ -54,19 +54,19 @@ namespace CapaNegocio
             return socio.BuscarSocio(Buscar1);
         }
 
-        public void InsertarSocio(string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Nacionalidad1, string EstadoCivil1, string Direccion1, long Telefono1, string Email1)
+        public virtual void InsertarSocio(string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Nacionalidad1, string EstadoCivil1, string Direccion1, long Telefono1, string Email1)
         {
             Datos_Socio socio = new Datos_Socio();
             socio.InsertarSocio(Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Nacionalidad1, EstadoCivil1, Direccion1, Telefono1, Email1);
         }
 
-        public void EditarSocio(int IdSocio, string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Nacionalidad1, string EstadoCivil1, string Direccion1, long Telefono1, string Email1)
+        public virtual void EditarSocio(int IdSocio, string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Nacionalidad1, string EstadoCivil1, string Direccion1, long Telefono1, string Email1)
         {
             Datos_Socio socio = new Datos_Socio();
             socio.EditarSocio(IdSocio, Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Nacionalidad1, EstadoCivil1, Direccion1, Telefono1, Email1);
         }
 
-        public void EliminarSocio(int IdSocio)
+        public virtual void EliminarSocio(int IdSocio)
         {
             Datos_Socio socio = new Datos_Socio();
             socio.EliminarSocio(IdSocio);

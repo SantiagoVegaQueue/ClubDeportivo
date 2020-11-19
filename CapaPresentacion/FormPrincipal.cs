@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
 
 namespace CapaPresentacion
 {
@@ -16,13 +17,40 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             personalizarForm();
+
+        }
+        #region Funcionalidades form principal
+
+        private void cerrarVentana_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void abrirFormsPanelContenedor<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = panelContedorDeForms.Controls.OfType<MiForm>().FirstOrDefault();
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                panelContedorDeForms.Controls.Add(formulario);
+                panelContedorDeForms.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            else
+            {
+                formulario.BringToFront();
+            }
         }
 
         private void personalizarForm()
         {
             panelSubMenuSocios.Visible = false;
+
         }
-        
+
         private void ocultarSubMenu()
         {
             if (panelSubMenuSocios.Visible)
@@ -43,19 +71,24 @@ namespace CapaPresentacion
                 subMenu.Visible = false;
             }
         }
+        #endregion
 
-
+        #region Acceso a los distintos forms
         private void btnInicio_Click(object sender, EventArgs e)
         {
             // codigo
 
             ocultarSubMenu();
         }
-
-        private void btnSocios_Click(object sender, EventArgs e)
+        private void btnSocios_MouseHover(object sender, EventArgs e)
         {
             abrirFormsPanelContenedor<FormSocio>();
             mostrarSubMenu(panelSubMenuSocios);
+        }
+        private void btnSocios_Click(object sender, EventArgs e)
+        {
+            //abrirFormsPanelContenedor<FormSocio>();
+            //mostrarSubMenu(panelSubMenuSocios);
         }
 
         private void btnDeportivos_Click(object sender, EventArgs e)
@@ -87,29 +120,13 @@ namespace CapaPresentacion
             abrirFormsPanelContenedor<FormProfesor>();
             ocultarSubMenu();
         }
+        #endregion
 
-        private void cerrarVentana_Click(object sender, EventArgs e)
+        private void panelContedorDeForms_Paint(object sender, PaintEventArgs e)
         {
-            this.Close();
+
         }
 
-        private void abrirFormsPanelContenedor<MiForm>() where MiForm : Form, new()
-        {
-            Form formulario;
-            formulario = panelContedorDeForms.Controls.OfType<MiForm>().FirstOrDefault();
-            if (formulario == null)
-            {
-                formulario = new MiForm();
-                formulario.TopLevel = false;
-                panelContedorDeForms.Controls.Add(formulario);
-                panelContedorDeForms.Tag = formulario;
-                formulario.Show();
-                formulario.BringToFront();
-            }
-            else
-            {
-                formulario.BringToFront();
-            }
-        }
+        
     }
 }

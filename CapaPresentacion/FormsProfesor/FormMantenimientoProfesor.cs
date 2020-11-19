@@ -15,8 +15,6 @@ namespace CapaPresentacion
     public partial class FormMantenimientoProfesor : Form
     {
         FormProfesor formProfesor = new FormProfesor();
-        
-        
         public bool editar = false;
 
         public FormMantenimientoProfesor()
@@ -28,7 +26,7 @@ namespace CapaPresentacion
         {
             Close();
         }
-
+        #region Guardar datos
         private void btnGuardarProfesor_Click(object sender, EventArgs e)
         {
             Validaciones.ValidarCampos(ref txtBoxNombreProfesor, "string");
@@ -44,15 +42,17 @@ namespace CapaPresentacion
                 try
                 {
                     Profesor profesor = new Profesor();
-             
+
                     profesor.InsertarProfesor(txtBoxNombreProfesor.Text, txtBoxApellidoProfesor.Text, comboBoxSexoProfesor.Text, Convert.ToInt32(txtBoxDniProfesor.Text), datePickerFechaNacProfesor.Value.Date, txtBoxDireccionProfesor.Text, Convert.ToInt64(txtBoxTelefonoProfesor.Text), txtBoxEmailProfesor.Text);
-                   
+
+                    FormExito.ConfirmarForm("Se ha guardado correctamente");
+
                     Close();
 
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se pudo guardar" + ex);
+                    FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
                 }
             }
             if (editar)
@@ -64,15 +64,18 @@ namespace CapaPresentacion
 
                     profesor.EditarProfesor(Convert.ToInt32(txtBoxIdProfesor.Text), txtBoxNombreProfesor.Text, txtBoxApellidoProfesor.Text, comboBoxSexoProfesor.Text, Convert.ToInt32(txtBoxDniProfesor.Text), datePickerFechaNacProfesor.Value.Date, txtBoxDireccionProfesor.Text, Convert.ToInt64(txtBoxTelefonoProfesor.Text), txtBoxEmailProfesor.Text);
 
+                    FormExito.ConfirmarForm("Se ha editado correctamente");
                     Close();
                     editar = false;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se pudo editar" + ex);
+                    FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
                 }
             }
 
         }
+        #endregion
+
     }
 }

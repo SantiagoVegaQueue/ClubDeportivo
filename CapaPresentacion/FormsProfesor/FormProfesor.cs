@@ -20,7 +20,6 @@ namespace CapaPresentacion
         public FormProfesor()
         {
             InitializeComponent();
-            
             listarProfesor();
         }
 
@@ -28,8 +27,6 @@ namespace CapaPresentacion
         {
             listarProfesor();
             diseñoTablaProfesor();
-            
-
         }
 
         #region Diseño e utilidades formulario
@@ -163,12 +160,13 @@ namespace CapaPresentacion
                 form.txtBoxTelefonoProfesor.Text = tablaProfesor.CurrentRow.Cells[8].Value.ToString();
                 form.txtBoxEmailProfesor.Text = tablaProfesor.CurrentRow.Cells[9].Value.ToString();
                 form.ShowDialog();
+                
                 listarProfesor();
-
+                
             }
             else
             {
-                MessageBox.Show("Elija una fila");
+                FormNotificacion.VerificarForm("Seleccione una fila para editar");
             }
         }
 
@@ -179,17 +177,24 @@ namespace CapaPresentacion
         {
             if (tablaProfesor.SelectedRows.Count > 0)
             {
-                Profesor negocioProfesor = new Profesor();
-                int idProfesor = Convert.ToInt32(tablaProfesor.CurrentRow.Cells[0].Value.ToString());
-                negocioProfesor.EliminarProfesor(idProfesor);
+                DialogResult result = new DialogResult();
+                FormAdvertencia form = new FormAdvertencia("¿Estas seguro de eliminar?");
+                result = form.ShowDialog();
+                    if(result == DialogResult.OK)
+                    {
+                        Profesor negocioProfesor = new Profesor();
+                        int idProfesor = Convert.ToInt32(tablaProfesor.CurrentRow.Cells[0].Value.ToString());
+                        negocioProfesor.EliminarProfesor(idProfesor);
 
-                MessageBox.Show("Se elimino");
-                listarProfesor();
+                        FormExito.ConfirmarForm("Se eliminó correctamente");
+                        listarProfesor();
+                    }     
             }
             else
             {
-                MessageBox.Show("Elija una fila");
+                FormNotificacion.VerificarForm("Seleccione una fila para editar");
             }
+
         }
 
         #endregion
