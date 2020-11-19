@@ -23,8 +23,6 @@ namespace CapaNegocio
         private string Email;
         private string Buscar;
 
-        Datos_Profesor datos_Profesor = new Datos_Profesor();
-
         public Profesor(int idProfesor, string codigo, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string direccion, long telefono, string email, string buscar)
         {
             this.idProfesor = idProfesor;
@@ -59,27 +57,32 @@ namespace CapaNegocio
 
         public DataTable ListarProfesor()
         {
-            return datos_Profesor.ListarProfesor();
+            Datos_Profesor profesor = new Datos_Profesor();
+            return profesor.ListarProfesor();
         }
 
         public DataTable BuscarProfesor(string Buscar1)
         {
-            return datos_Profesor.BuscarProfesor(Buscar1);
+            Datos_Profesor profesor = new Datos_Profesor();
+            return profesor.BuscarProfesor(Buscar1);
         }
-
+        //string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Direccion1, long Telefono1, string Email1
         public void InsertarProfesor(string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Direccion1, long Telefono1, string Email1)
         {
-            datos_Profesor.InsertarProfesor(Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Direccion1, Telefono1, Email1);
+            Datos_Profesor profesor = new Datos_Profesor();
+            profesor.InsertarProfesor(Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Direccion1, Telefono1, Email1);
         }
 
         public void EditarProfesor(int IdProfesor, string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Direccion1, long Telefono1, string Email1)
         {
-            datos_Profesor.EditarProfesor(IdProfesor, Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Direccion1, Telefono1, Email1);
+            Datos_Profesor profesor = new Datos_Profesor();
+            profesor.EditarProfesor(IdProfesor, Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Direccion1, Telefono1, Email1);
         }
 
         public void EliminarProfesor(int IdProfesor)
         {
-            datos_Profesor.EliminarProfesor(IdProfesor);
+            Datos_Profesor profesor = new Datos_Profesor();
+            profesor.EliminarProfesor(IdProfesor);
         }
     }
 }

@@ -13,14 +13,9 @@ namespace CapaPresentacion
 {
     public partial class FormProfesor : Form
     {
-        
-
-        
 
         private string idProfesor;
         public string IdProfesor { get => idProfesor; set => idProfesor = value; }
-
-
 
         public FormProfesor()
         {
@@ -33,7 +28,7 @@ namespace CapaPresentacion
         {
             listarProfesor();
             diseñoTablaProfesor();
-            tablaProfesor.ClearSelection();
+            
 
         }
 
@@ -42,7 +37,8 @@ namespace CapaPresentacion
         {
             tablaProfesor.Columns[0].Visible = false;
             tablaProfesor.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-            
+            tablaProfesor.ClearSelection();
+
         }
 
         private void limpiarTexBox()

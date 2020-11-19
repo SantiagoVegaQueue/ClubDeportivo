@@ -107,7 +107,7 @@
             this.btnEditarDeporte.IconVisible = true;
             this.btnEditarDeporte.IconZoom = 90D;
             this.btnEditarDeporte.IsTab = false;
-            this.btnEditarDeporte.Location = new System.Drawing.Point(388, 661);
+            this.btnEditarDeporte.Location = new System.Drawing.Point(494, 661);
             this.btnEditarDeporte.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnEditarDeporte.Name = "btnEditarDeporte";
             this.btnEditarDeporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -144,7 +144,7 @@
             this.btnEliminarDeporte.IconVisible = true;
             this.btnEliminarDeporte.IconZoom = 90D;
             this.btnEliminarDeporte.IsTab = false;
-            this.btnEliminarDeporte.Location = new System.Drawing.Point(598, 661);
+            this.btnEliminarDeporte.Location = new System.Drawing.Point(704, 661);
             this.btnEliminarDeporte.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnEliminarDeporte.Name = "btnEliminarDeporte";
             this.btnEliminarDeporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -181,7 +181,7 @@
             this.btnAgregarDeporte.IconVisible = true;
             this.btnAgregarDeporte.IconZoom = 90D;
             this.btnAgregarDeporte.IsTab = false;
-            this.btnAgregarDeporte.Location = new System.Drawing.Point(178, 661);
+            this.btnAgregarDeporte.Location = new System.Drawing.Point(284, 661);
             this.btnAgregarDeporte.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnAgregarDeporte.Name = "btnAgregarDeporte";
             this.btnAgregarDeporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -218,7 +218,7 @@
             this.btnExportarPDF.IconVisible = true;
             this.btnExportarPDF.IconZoom = 50D;
             this.btnExportarPDF.IsTab = false;
-            this.btnExportarPDF.Location = new System.Drawing.Point(808, 661);
+            this.btnExportarPDF.Location = new System.Drawing.Point(956, 31);
             this.btnExportarPDF.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnExportarPDF.Name = "btnExportarPDF";
             this.btnExportarPDF.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
