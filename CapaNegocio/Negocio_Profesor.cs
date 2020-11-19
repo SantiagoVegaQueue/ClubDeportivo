@@ -24,7 +24,26 @@ namespace CapaNegocio
         private string Buscar;
 
         Datos_Profesor datos_Profesor = new Datos_Profesor();
-        
+
+        public Negocio_Profesor(int idProfesor, string codigo, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string direccion, long telefono, string email, string buscar)
+        {
+            this.idProfesor = idProfesor;
+            Codigo = codigo;
+            Nombre = nombre;
+            Apellido = apellido;
+            Sexo = sexo;
+            Dni = dni;
+            Fechanac = fechanac;
+            Direccion = direccion;
+            Telefono = telefono;
+            Email = email;
+            Buscar = buscar;
+        }
+
+        public Negocio_Profesor()
+        {
+
+        }
 
         public int IdProfesor { get => idProfesor; set => idProfesor = value; }
         public string Codigo1 { get => Codigo; set => Codigo = value; }

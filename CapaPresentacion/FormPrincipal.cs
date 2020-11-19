@@ -54,7 +54,7 @@ namespace CapaPresentacion
 
         private void btnSocios_Click(object sender, EventArgs e)
         {
-            abrirFormsPanelContenedor<FormSocios>();
+            abrirFormsPanelContenedor<FormSocio>();
             mostrarSubMenu(panelSubMenuSocios);
         }
 

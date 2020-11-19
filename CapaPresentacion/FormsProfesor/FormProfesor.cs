@@ -13,7 +13,7 @@ namespace CapaPresentacion
 {
     public partial class FormProfesor : Form
     {
-        Negocio_Profesor negocioProfesor = new Negocio_Profesor();
+        
 
         
 
@@ -69,6 +69,7 @@ namespace CapaPresentacion
         #region Buscar profesor
         public void buscarProfesor(string buscar)
         {
+            Negocio_Profesor negocioProfesor = new Negocio_Profesor();
             tablaProfesor.DataSource = negocioProfesor.BuscarProfesor(buscar);
         }
 
@@ -182,6 +183,7 @@ namespace CapaPresentacion
         {
             if (tablaProfesor.SelectedRows.Count > 0)
             {
+                Negocio_Profesor negocioProfesor = new Negocio_Profesor();
                 int idProfesor = Convert.ToInt32(tablaProfesor.CurrentRow.Cells[0].Value.ToString());
                 negocioProfesor.EliminarProfesor(idProfesor);
 
@@ -221,6 +223,11 @@ namespace CapaPresentacion
         private void btnExportarPDF_MouseHover(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
