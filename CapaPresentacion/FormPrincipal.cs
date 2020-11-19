@@ -61,7 +61,7 @@ namespace CapaPresentacion
         private void btnDeportivos_Click(object sender, EventArgs e)
         {
             //codigo
-
+            abrirFormsPanelContenedor<FormSocioDeportivo>();
             ocultarSubMenu();
         }
 

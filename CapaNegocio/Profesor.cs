@@ -9,7 +9,7 @@ using CapaDatos;
 
 namespace CapaNegocio
 {
-    public class Negocio_Profesor
+    public class Profesor
     {
         private int idProfesor;
         private string Codigo;
@@ -25,7 +25,7 @@ namespace CapaNegocio
 
         Datos_Profesor datos_Profesor = new Datos_Profesor();
 
-        public Negocio_Profesor(int idProfesor, string codigo, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string direccion, long telefono, string email, string buscar)
+        public Profesor(int idProfesor, string codigo, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string direccion, long telefono, string email, string buscar)
         {
             this.idProfesor = idProfesor;
             Codigo = codigo;
@@ -40,7 +40,7 @@ namespace CapaNegocio
             Buscar = buscar;
         }
 
-        public Negocio_Profesor()
+        public Profesor()
         {
 
         }

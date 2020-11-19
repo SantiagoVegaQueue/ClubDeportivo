@@ -13,7 +13,7 @@ namespace CapaPresentacion
 {
     public partial class FormDeporte : Form
     {
-        Negocio_Deporte negocio_Deporte = new Negocio_Deporte();
+        Deporte negocio_Deporte = new Deporte();
         public FormDeporte()
         {
             InitializeComponent();
@@ -38,7 +38,7 @@ namespace CapaPresentacion
         #region Listar deporte
         public void ListarDeporte()
         {
-            Negocio_Deporte deporte = new Negocio_Deporte();
+            Deporte deporte = new Deporte();
             tablaDeporte.DataSource = deporte.ListarDeporte();
         }
 
@@ -47,7 +47,7 @@ namespace CapaPresentacion
         #region Buscar deporte
         public void BuscarDeporte(string buscar)
         {
-            Negocio_Deporte deporte = new Negocio_Deporte();
+            Deporte deporte = new Deporte();
             tablaDeporte.DataSource = deporte.BuscarDeporte(buscar);
         }
 

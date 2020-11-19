@@ -43,7 +43,7 @@ namespace CapaPresentacion
             {
                 try
                 {
-                    Negocio_Profesor profesor = new Negocio_Profesor();
+                    Profesor profesor = new Profesor();
              
                     profesor.InsertarProfesor(txtBoxNombreProfesor.Text, txtBoxApellidoProfesor.Text, comboBoxSexoProfesor.Text, Convert.ToInt32(txtBoxDniProfesor.Text), datePickerFechaNacProfesor.Value.Date, txtBoxDireccionProfesor.Text, Convert.ToInt64(txtBoxTelefonoProfesor.Text), txtBoxEmailProfesor.Text);
                    
@@ -60,7 +60,7 @@ namespace CapaPresentacion
 
                 try
                 {
-                    Negocio_Profesor profesor = new Negocio_Profesor();
+                    Profesor profesor = new Profesor();
 
                     profesor.EditarProfesor(Convert.ToInt32(txtBoxIdProfesor.Text), txtBoxNombreProfesor.Text, txtBoxApellidoProfesor.Text, comboBoxSexoProfesor.Text, Convert.ToInt32(txtBoxDniProfesor.Text), datePickerFechaNacProfesor.Value.Date, txtBoxDireccionProfesor.Text, Convert.ToInt64(txtBoxTelefonoProfesor.Text), txtBoxEmailProfesor.Text);
 

@@ -14,7 +14,7 @@ namespace CapaPresentacion
     public partial class FormMantenimientoDeporte : Form
     {
         
-        Negocio_Deporte negocio_Deporte = new Negocio_Deporte();
+        Deporte negocio_Deporte = new Deporte();
         public string idProf;
         public bool editar = false;
 
@@ -44,7 +44,7 @@ namespace CapaPresentacion
 
         public void ListarProfesores()
         {
-            Negocio_Profesor negocio_Profesor = new Negocio_Profesor();
+            Profesor negocio_Profesor = new Profesor();
             tablaListaProfesores.DataSource = negocio_Profesor.ListarProfesor();
 
             /*comboBoxProfesores.DataSource = negocio_Profesor.ListarProfesor();
@@ -133,7 +133,7 @@ namespace CapaPresentacion
 
         private void comboBoxProfesores_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Negocio_Profesor negocio_Profesor = new Negocio_Profesor();
+            Profesor negocio_Profesor = new Profesor();
 
             
         }

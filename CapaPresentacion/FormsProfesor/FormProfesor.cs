@@ -60,7 +60,7 @@ namespace CapaPresentacion
         #region Listar profesores
         public void listarProfesor()
         {
-            Negocio_Profesor profesor = new Negocio_Profesor();
+            Profesor profesor = new Profesor();
             tablaProfesor.DataSource = profesor.ListarProfesor();
         }
 
@@ -69,7 +69,7 @@ namespace CapaPresentacion
         #region Buscar profesor
         public void buscarProfesor(string buscar)
         {
-            Negocio_Profesor negocioProfesor = new Negocio_Profesor();
+            Profesor negocioProfesor = new Profesor();
             tablaProfesor.DataSource = negocioProfesor.BuscarProfesor(buscar);
         }
 
@@ -183,7 +183,7 @@ namespace CapaPresentacion
         {
             if (tablaProfesor.SelectedRows.Count > 0)
             {
-                Negocio_Profesor negocioProfesor = new Negocio_Profesor();
+                Profesor negocioProfesor = new Profesor();
                 int idProfesor = Convert.ToInt32(tablaProfesor.CurrentRow.Cells[0].Value.ToString());
                 negocioProfesor.EliminarProfesor(idProfesor);
 

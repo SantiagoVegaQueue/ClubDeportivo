@@ -45,7 +45,6 @@
     <Compile Include="Datos_Deporte.cs" />
     <Compile Include="Datos_Profesor.cs" />
     <Compile Include="Datos_Socio.cs" />
-    <Compile Include="Datos_SocioDeportivo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

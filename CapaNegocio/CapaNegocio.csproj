@@ -41,11 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Negocio_Deporte.cs" />
-    <Compile Include="Negocio_Profesor.cs" />
+    <Compile Include="Deporte.cs" />
+    <Compile Include="Profesor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Socio.cs" />
-    <Compile Include="SocioDeportivo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">

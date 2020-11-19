@@ -9,7 +9,7 @@ using CapaDatos;
 
 namespace CapaNegocio
 {
-    public class Negocio_Deporte
+    public class Deporte
     {
 
         private int idDeporte;
@@ -19,7 +19,7 @@ namespace CapaNegocio
         private string Horarios;
         private int idProfesor;
         private string Buscar;
-        Negocio_Profesor profe = new Negocio_Profesor();
+        Profesor profe = new Profesor();
 
         Datos_Deporte datos_Deporte = new Datos_Deporte();
 
@@ -30,7 +30,7 @@ namespace CapaNegocio
         public string Horarios1 { get => Horarios; set => Horarios = value; }
         public int IdProfesor { get => idProfesor; set => idProfesor = value; }
         public string Buscar1 { get => Buscar; set => Buscar = value; }
-        public Negocio_Profesor Profe { get => profe; set => profe = value; }
+        public Profesor Profe { get => profe; set => profe = value; }
 
         public DataTable ListarDeporte()
         {
