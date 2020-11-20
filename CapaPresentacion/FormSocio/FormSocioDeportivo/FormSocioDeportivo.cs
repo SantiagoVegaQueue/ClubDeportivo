@@ -16,5 +16,16 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregarSocio_Click(object sender, EventArgs e)
+        {
+            FormMantenimientoSocioDeportivo form = new FormMantenimientoSocioDeportivo();
+            form.ShowDialog();
+        }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMantenimientoDeporte));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -45,8 +45,8 @@
             this.labelNombreProfesorRegistro = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.cerrarVentana = new System.Windows.Forms.PictureBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.comboBoxDiasDeporte = new System.Windows.Forms.ComboBox();
             this.comboBoxHorarios = new System.Windows.Forms.ComboBox();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -72,7 +72,7 @@
             // 
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(255, 55);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(142, 55);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(115, 25);
             this.bunifuCustomLabel7.TabIndex = 86;
@@ -99,32 +99,30 @@
             this.txtBoxIdProfesor.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxIdProfesor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxIdProfesor.isPassword = false;
-            this.txtBoxIdProfesor.Location = new System.Drawing.Point(433, 117);
+            this.txtBoxIdProfesor.Location = new System.Drawing.Point(279, 239);
             this.txtBoxIdProfesor.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxIdProfesor.Name = "txtBoxIdProfesor";
-            this.txtBoxIdProfesor.Size = new System.Drawing.Size(153, 30);
+            this.txtBoxIdProfesor.Size = new System.Drawing.Size(73, 30);
             this.txtBoxIdProfesor.TabIndex = 74;
             this.txtBoxIdProfesor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBoxIdProfesor.Visible = false;
             // 
             // bunifuCustomLabel4
             // 
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(430, 97);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(276, 219);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(76, 16);
             this.bunifuCustomLabel4.TabIndex = 73;
             this.bunifuCustomLabel4.Text = "IdProfesor";
-            this.bunifuCustomLabel4.Visible = false;
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(14, 244);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(14, 249);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(37, 16);
             this.bunifuCustomLabel2.TabIndex = 71;
@@ -159,7 +157,7 @@
             this.btnGuardarDeporte.OnHovercolor = System.Drawing.Color.ForestGreen;
             this.btnGuardarDeporte.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGuardarDeporte.selected = false;
-            this.btnGuardarDeporte.Size = new System.Drawing.Size(569, 50);
+            this.btnGuardarDeporte.Size = new System.Drawing.Size(357, 50);
             this.btnGuardarDeporte.TabIndex = 70;
             this.btnGuardarDeporte.Text = "Guardar";
             this.btnGuardarDeporte.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -173,12 +171,11 @@
             this.bunifuCustomLabel1.Enabled = false;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(430, 43);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(276, 165);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(74, 16);
             this.bunifuCustomLabel1.TabIndex = 69;
             this.bunifuCustomLabel1.Text = "IdDeporte";
-            this.bunifuCustomLabel1.Visible = false;
             // 
             // txtBoxIdDeporte
             // 
@@ -190,13 +187,12 @@
             this.txtBoxIdDeporte.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxIdDeporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxIdDeporte.isPassword = false;
-            this.txtBoxIdDeporte.Location = new System.Drawing.Point(432, 63);
+            this.txtBoxIdDeporte.Location = new System.Drawing.Point(278, 185);
             this.txtBoxIdDeporte.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxIdDeporte.Name = "txtBoxIdDeporte";
-            this.txtBoxIdDeporte.Size = new System.Drawing.Size(154, 30);
+            this.txtBoxIdDeporte.Size = new System.Drawing.Size(74, 30);
             this.txtBoxIdDeporte.TabIndex = 68;
             this.txtBoxIdDeporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBoxIdDeporte.Visible = false;
             // 
             // txtBoxNombreDeporte
             // 
@@ -211,7 +207,7 @@
             this.txtBoxNombreDeporte.Location = new System.Drawing.Point(17, 165);
             this.txtBoxNombreDeporte.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxNombreDeporte.Name = "txtBoxNombreDeporte";
-            this.txtBoxNombreDeporte.Size = new System.Drawing.Size(569, 30);
+            this.txtBoxNombreDeporte.Size = new System.Drawing.Size(212, 30);
             this.txtBoxNombreDeporte.TabIndex = 67;
             this.txtBoxNombreDeporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -243,25 +239,25 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 40);
+            this.panel1.Size = new System.Drawing.Size(401, 40);
             this.panel1.TabIndex = 88;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 40;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // cerrarVentana
             // 
             this.cerrarVentana.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cerrarVentana.Image = ((System.Drawing.Image)(resources.GetObject("cerrarVentana.Image")));
-            this.cerrarVentana.Location = new System.Drawing.Point(562, 11);
+            this.cerrarVentana.Location = new System.Drawing.Point(363, 11);
             this.cerrarVentana.Name = "cerrarVentana";
             this.cerrarVentana.Size = new System.Drawing.Size(26, 26);
             this.cerrarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.cerrarVentana.TabIndex = 66;
             this.cerrarVentana.TabStop = false;
             this.cerrarVentana.Click += new System.EventHandler(this.cerrarVentana_Click);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 40;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // comboBoxDiasDeporte
             // 
@@ -279,9 +275,9 @@
             "Domingo",
             "Lunes, Miércoles y Viernes",
             "Martes, Jueves y Sabado"});
-            this.comboBoxDiasDeporte.Location = new System.Drawing.Point(17, 271);
+            this.comboBoxDiasDeporte.Location = new System.Drawing.Point(17, 218);
             this.comboBoxDiasDeporte.Name = "comboBoxDiasDeporte";
-            this.comboBoxDiasDeporte.Size = new System.Drawing.Size(571, 23);
+            this.comboBoxDiasDeporte.Size = new System.Drawing.Size(212, 23);
             this.comboBoxDiasDeporte.TabIndex = 75;
             // 
             // comboBoxHorarios
@@ -294,9 +290,9 @@
             "Mañana",
             "Tarde",
             "Noche"});
-            this.comboBoxHorarios.Location = new System.Drawing.Point(17, 218);
+            this.comboBoxHorarios.Location = new System.Drawing.Point(17, 276);
             this.comboBoxHorarios.Name = "comboBoxHorarios";
-            this.comboBoxHorarios.Size = new System.Drawing.Size(571, 23);
+            this.comboBoxHorarios.Size = new System.Drawing.Size(212, 23);
             this.comboBoxHorarios.TabIndex = 89;
             // 
             // bunifuDragControl1
@@ -322,49 +318,47 @@
             this.tablaListaProfesores.AllowUserToDeleteRows = false;
             this.tablaListaProfesores.AllowUserToResizeColumns = false;
             this.tablaListaProfesores.AllowUserToResizeRows = false;
-            this.tablaListaProfesores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.tablaListaProfesores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tablaListaProfesores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.tablaListaProfesores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.tablaListaProfesores.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tablaListaProfesores.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tablaListaProfesores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tablaListaProfesores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tablaListaProfesores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tablaListaProfesores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tablaListaProfesores.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tablaListaProfesores.DefaultCellStyle = dataGridViewCellStyle2;
             this.tablaListaProfesores.EnableHeadersVisualStyles = false;
-            this.tablaListaProfesores.Location = new System.Drawing.Point(13, 349);
+            this.tablaListaProfesores.Location = new System.Drawing.Point(17, 366);
             this.tablaListaProfesores.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tablaListaProfesores.Name = "tablaListaProfesores";
             this.tablaListaProfesores.ReadOnly = true;
             this.tablaListaProfesores.RowHeadersVisible = false;
             this.tablaListaProfesores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tablaListaProfesores.Size = new System.Drawing.Size(573, 166);
+            this.tablaListaProfesores.Size = new System.Drawing.Size(357, 166);
             this.tablaListaProfesores.TabIndex = 93;
+            this.tablaListaProfesores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaListaProfesores_CellContentClick);
             // 
             // FormMantenimientoDeporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(600, 600);
+            this.ClientSize = new System.Drawing.Size(401, 600);
             this.Controls.Add(this.tablaListaProfesores);
             this.Controls.Add(this.bunifuCustomLabel9);
             this.Controls.Add(this.comboBoxHorarios);

@@ -76,64 +76,11 @@ namespace CapaPresentacion
         #region Agregar profesor
         private void btnAgregarProfesor_Click(object sender, EventArgs e)
         {
-
             FormMantenimientoProfesor form = new FormMantenimientoProfesor();
 
             form.ShowDialog();
             form.editar = false;
             listarProfesor();
-
-            /*(if (!editar)
-            {
-                try
-                {
-                    entidades_Profesor.Nombre1 = txtBoxNombreProfesor.Text;
-                    entidades_Profesor.Apellido1 = txtBoxApellidoProfesor.Text;
-                    entidades_Profesor.Sexo1 = comboBoxSexoProfesor.Text;
-                    entidades_Profesor.Dni1 = Convert.ToInt32(txtBoxDniProfesor.Text);
-                    entidades_Profesor.Fechanac1 = datePickerFechaNacProfesor.Value.Date;
-                    entidades_Profesor.Direccion1 = txtBoxDireccionProfesor.Text;
-                    entidades_Profesor.Telefono1 = Convert.ToInt64(txtBoxTelefonoProfesor.Text);
-                    entidades_Profesor.Email1 = txtBoxEmailProfesor.Text;
-
-                    negocioProfesor.InsertarProfesor(entidades_Profesor);
-                    listarProfesor();
-
-                    MessageBox.Show("Se guardo");
-                    limpiarTexBox();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error" + ex);
-                }
-            }
-            else
-            {
-                try
-                {
-                    entidades_Profesor.IdProfesor = Convert.ToInt32(IdProfesor);
-                    entidades_Profesor.Nombre1 = txtBoxNombreProfesor.Text;
-                    entidades_Profesor.Apellido1 = txtBoxApellidoProfesor.Text;
-                    entidades_Profesor.Sexo1 = comboBoxSexoProfesor.Text;
-                    entidades_Profesor.Dni1 = Convert.ToInt32(txtBoxDniProfesor.Text);
-                    entidades_Profesor.Fechanac1 = datePickerFechaNacProfesor.Value.Date;
-                    entidades_Profesor.Direccion1 = txtBoxDireccionProfesor.Text;
-                    entidades_Profesor.Telefono1 = Convert.ToInt64(txtBoxTelefonoProfesor.Text);
-                    entidades_Profesor.Email1 = txtBoxEmailProfesor.Text;
-
-                    negocioProfesor.EditarProfesor(entidades_Profesor);
-                    listarProfesor();
-                    editar = false;
-                    MessageBox.Show("Se edito");
-                    limpiarTexBox();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error" + ex);
-                }
-            }
-            */
-
         }
 
         #endregion
@@ -192,7 +139,7 @@ namespace CapaPresentacion
             }
             else
             {
-                FormNotificacion.VerificarForm("Seleccione una fila para editar");
+                FormNotificacion.VerificarForm("Seleccione una fila para eliminar");
             }
 
         }
@@ -216,19 +163,22 @@ namespace CapaPresentacion
         }
         #endregion
 
+        #region Botón de exportar a PDF
         private void btnExportarPDF_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnExportarPDF_MouseHover(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
+
     }
 }

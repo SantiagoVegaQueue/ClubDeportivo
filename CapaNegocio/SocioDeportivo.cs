@@ -9,10 +9,24 @@ namespace CapaNegocio
 {
     public class SocioDeportivo : Socio
     {
-        public override double CalcularPrecioFinal()
+        private int cantDeportes;
+
+        public int CantDeportes { get => cantDeportes; set => cantDeportes = value; }
+
+        public override double CalcularPrecioCuota()
         {
-            
-            return base.CalcularPrecioFinal();
+            base.CalcularPrecioCuota();
+
+            if (CantDeportes>=3)
+            {
+                this.PrecioFinal1 = PrecioFinal1 - (PrecioFinal1 * 0.10);
+            }
+
+            return this.PrecioFinal1;
         }
+
+
+
+
     }
 }

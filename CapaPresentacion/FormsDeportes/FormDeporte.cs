@@ -13,7 +13,7 @@ namespace CapaPresentacion
 {
     public partial class FormDeporte : Form
     {
-        Deporte negocio_Deporte = new Deporte();
+        
         public FormDeporte()
         {
             InitializeComponent();
@@ -26,14 +26,14 @@ namespace CapaPresentacion
             tablaDeporte.ClearSelection();
         }
 
+        #region Diseño e utilidades formulario
         public void DiseñoTablaDeporte()
         {
             tablaDeporte.Columns[0].Visible = false;
             tablaDeporte.Columns[1].Visible = false;
             tablaDeporte.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-
         }
-
+        #endregion
 
         #region Listar deporte
         public void ListarDeporte()
@@ -63,6 +63,7 @@ namespace CapaPresentacion
 
         #endregion
 
+        #region Agregar deporte
         private void btnAgregarDeporte_Click(object sender, EventArgs e)
         {
             FormMantenimientoDeporte formMantenimientoDeporte = new FormMantenimientoDeporte();
@@ -70,44 +71,59 @@ namespace CapaPresentacion
             formMantenimientoDeporte.editar = false;
             ListarDeporte();
         }
+        #endregion
 
+        #region Editar deporte
         private void btnEditarDeporte_Click(object sender, EventArgs e)
         {
             if (tablaDeporte.SelectedRows.Count > 0)
             {
-                FormMantenimientoDeporte formMantenimientoDeporte = new FormMantenimientoDeporte();
+                FormMantenimientoDeporte form = new FormMantenimientoDeporte();
 
-                formMantenimientoDeporte.editar = true;
-                formMantenimientoDeporte.txtBoxIdDeporte.Text = tablaDeporte.CurrentRow.Cells[0].Value.ToString();
-                formMantenimientoDeporte.txtBoxIdProfesor.Text= tablaDeporte.CurrentRow.Cells[1].Value.ToString();
-                formMantenimientoDeporte.txtBoxNombreDeporte.Text = tablaDeporte.CurrentRow.Cells[3].Value.ToString();
-                formMantenimientoDeporte.comboBoxDiasDeporte.Text = tablaDeporte.CurrentRow.Cells[6].Value.ToString();
-                formMantenimientoDeporte.comboBoxHorarios.Text = tablaDeporte.CurrentRow.Cells[7].Value.ToString();
+                form.editar = true;
+                form.txtBoxIdDeporte.Text = tablaDeporte.CurrentRow.Cells[0].Value.ToString();
+                form.txtBoxIdProfesor.Text = tablaDeporte.CurrentRow.Cells[1].Value.ToString();
+                form.txtBoxNombreDeporte.Text = tablaDeporte.CurrentRow.Cells[3].Value.ToString();
+                form.comboBoxDiasDeporte.Text = tablaDeporte.CurrentRow.Cells[6].Value.ToString();
+                form.comboBoxHorarios.Text = tablaDeporte.CurrentRow.Cells[7].Value.ToString();
 
-                formMantenimientoDeporte.ShowDialog();
+                form.ShowDialog();
                 ListarDeporte();
 
             }
             else
             {
-                MessageBox.Show("Elija una fila");
+                FormNotificacion.VerificarForm("Seleccione una fila para editar");
             }
         }
+        #endregion
 
+        #region Eliminar deporte
         private void btnEliminarDeporte_Click(object sender, EventArgs e)
         {
             if (tablaDeporte.SelectedRows.Count > 0)
             {
-                int idDeporte = Convert.ToInt32(tablaDeporte.CurrentRow.Cells[0].Value.ToString());
-                negocio_Deporte.EliminarDeporte(idDeporte);
+                DialogResult result = new DialogResult();
+                FormAdvertencia form = new FormAdvertencia("¿Estas seguro de eliminar?");
+                result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    Deporte depo = new Deporte();
+                    int idDeporte = Convert.ToInt32(tablaDeporte.CurrentRow.Cells[0].Value.ToString());
+                    depo.EliminarDeporte(idDeporte);
 
-                MessageBox.Show("Se elimino");
-                ListarDeporte();
+                    FormExito.ConfirmarForm("Se eliminó correctamente");
+                    ListarDeporte();
+                }
+
+
             }
             else
             {
-                MessageBox.Show("Elija una fila");
+                FormNotificacion.VerificarForm("Seleccione una fila para eliminar");
             }
         }
+        #endregion
+
     }
 }

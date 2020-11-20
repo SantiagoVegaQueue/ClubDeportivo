@@ -23,8 +23,9 @@ namespace CapaNegocio
         private long Telefono;
         private string Email;
         private string Buscar;
-        private double CuotaBase;
-        private double CuotaFinal;
+        private string TipoPago;
+        private double Cuotabase;
+        private double PrecioFinal;
 
         public int IdSocio { get => idSocio; set => idSocio = value; }
         public string Codigo1 { get => Codigo; set => Codigo = value; }
@@ -39,8 +40,8 @@ namespace CapaNegocio
         public long Telefono1 { get => Telefono; set => Telefono = value; }
         public string Email1 { get => Email; set => Email = value; }
         public string Buscar1 { get => Buscar; set => Buscar = value; }
-        public double CuotaBase1 { get => CuotaBase; set => CuotaBase = value; }
-        public double CuotaFinal1 { get => CuotaFinal; set => CuotaFinal = value; }
+        public double PrecioFinal1 { get => PrecioFinal; set => PrecioFinal = value; }
+        public double Cuotabase1 { get => Cuotabase; set => Cuotabase = value; }
 
         public virtual DataTable ListarSocio()
         {
@@ -72,11 +73,24 @@ namespace CapaNegocio
             socio.EliminarSocio(IdSocio);
         }
 
-        public virtual double CalcularPrecioFinal()
+        public virtual double CalcularPrecioCuota()
         {
+            
+            switch (this.TipoPago)
+            {
+                case ("Efectivo"):
+                    this.PrecioFinal1 = Cuotabase1;
+                    break;
+                case ("Tarjeta"):
+                    this.PrecioFinal1 = Cuotabase1 + (Cuotabase1 * 0.30f);
+                    break;
+            }
 
-            return CuotaFinal1 + (CuotaFinal1 * CuotaBase1);
+            return PrecioFinal1;
         }
+
+        
+        
         
     }
 }

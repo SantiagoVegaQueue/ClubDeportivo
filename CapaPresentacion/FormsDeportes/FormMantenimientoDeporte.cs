@@ -44,46 +44,31 @@ namespace CapaPresentacion
 
         public void ListarProfesores()
         {
-            Profesor negocio_Profesor = new Profesor();
-            tablaListaProfesores.DataSource = negocio_Profesor.ListarProfesor();
-
-            /*comboBoxProfesores.DataSource = negocio_Profesor.ListarProfesor();
-            comboBoxProfesores.ValueMember = "IdProfesor";
-            comboBoxProfesores.DisplayMember = "Nombre";
-
-            comboBoxApellidoProfesores.DataSource = negocio_Profesor.ListarProfesor();
-            comboBoxApellidoProfesores.ValueMember = "IdProfesor";
-            comboBoxApellidoProfesores.DisplayMember = "Apellido";
-
-            comboBoxDniProfesores.DataSource = negocio_Profesor.ListarProfesor();
-            comboBoxDniProfesores.ValueMember = "IdProfesor";
-            comboBoxDniProfesores.DisplayMember = "Dni";
-
-            comboBoxTelefonoProfesores.DataSource = negocio_Profesor.ListarProfesor();
-            comboBoxTelefonoProfesores.ValueMember = "IdProfesor";
-            comboBoxTelefonoProfesores.DisplayMember = "Telefono";
-            */
-
-
+            Profesor profesor = new Profesor();
+            tablaListaProfesores.DataSource = profesor.ListarProfesor();
         }
 
         private void btnGuardarDeporte_Click(object sender, EventArgs e)
         {
+            Validaciones.ValidarCampos(ref txtBoxNombreDeporte, "string");
+            
             if (!editar)
             {
                 try
                 {
                     if (tablaListaProfesores.SelectedRows.Count > 0)
                     {
-                        idProf = tablaListaProfesores.CurrentRow.Cells[0].Value.ToString();
+                        Deporte depo = new Deporte();
+                        txtBoxIdProfesor.Text = tablaListaProfesores.CurrentRow.Cells[0].Value.ToString();
+                        
                         string nombre = txtBoxNombreDeporte.Text;
                         string horarios = comboBoxHorarios.Text;
                         string dias = comboBoxDiasDeporte.Text;
                         int idProfesor = Convert.ToInt32(idProf);
-                        
 
-                        negocio_Deporte.InsertarDeporte(nombre, dias, horarios, idProfesor);
+                        depo.InsertarDeporte(txtBoxNombreDeporte.Text, comboBoxDiasDeporte.Text, comboBoxHorarios.Text, Convert.ToInt32(txtBoxIdProfesor.Text));
 
+                        FormExito.ConfirmarForm("Se ha guardado correctamente");
                         Close();
                     }
                     else
@@ -95,7 +80,7 @@ namespace CapaPresentacion
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se pudo guardar" + ex);
+                    FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
                 }
             }
             if (editar)
@@ -104,16 +89,15 @@ namespace CapaPresentacion
                 {
                     if (tablaListaProfesores.SelectedRows.Count>0)
                     {
-                        idProf = tablaListaProfesores.CurrentRow.Cells[0].Value.ToString();
-                        int idDeporte = Convert.ToInt32(txtBoxIdDeporte.Text);
-                        string nombre = txtBoxNombreDeporte.Text;
-                        string horarios = comboBoxHorarios.Text;
-                        string dias = comboBoxDiasDeporte.Text;
-                        int idProfesor = Convert.ToInt32(idProf);
+                        FormDeporte form = new FormDeporte();
 
-                        negocio_Deporte.EditarDeporte(idDeporte, nombre, horarios, dias, idProfesor);
+                        string idProfe = tablaListaProfesores.CurrentRow.Cells[0].Value.ToString();
 
+                        Deporte depo = new Deporte();
 
+                        
+
+                        depo.EditarDeporte(Convert.ToInt32(txtBoxIdDeporte.Text), txtBoxNombreDeporte.Text, comboBoxDiasDeporte.Text, comboBoxHorarios.Text, Convert.ToInt32(tablaListaProfesores.CurrentRow.Cells[0].Value.ToString()));
 
                         Close();
                         editar = false;
@@ -138,6 +122,9 @@ namespace CapaPresentacion
             
         }
 
-        
+        private void tablaListaProfesores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
     }
 }
