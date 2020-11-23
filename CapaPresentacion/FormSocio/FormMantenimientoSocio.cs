@@ -40,7 +40,7 @@ namespace CapaPresentacion
             Validaciones.ValidarCampoCombo(ref comboBoxSexo, "string");
             Validaciones.ValidarCampoCombo(ref comboBoxEstcivil, "string");
             Validaciones.ValidarCampoCombo(ref comboBoxPago, "string");
-
+            
             if (!editar)
             {
                 try
@@ -48,8 +48,10 @@ namespace CapaPresentacion
                     Socio socio = new Socio();
 
                     socio.InsertarSocio(txtBoxNombre.Text, txtBoxApellido.Text, comboBoxSexo.Text, Convert.ToInt32(txtBoxDni.Text), datePickerFechaNac.Value.Date, txtBoxNacionalidad.Text, comboBoxEstcivil.Text, txtBoxDireccion.Text, Convert.ToInt64(txtBoxTelefono.Text), txtBoxEmail.Text, comboBoxPago.Text);
-
+                    
                     FormExito.ConfirmarForm("Se ha guardado correctamente");
+                    FormSocioDeportivo form = new FormSocioDeportivo();
+                    form.ListarSociosDeportivos();
                     Close();
                     
                 }
@@ -64,14 +66,15 @@ namespace CapaPresentacion
                 try
                 {
                     Socio socio = new Socio();
-
+                    FormSocioDeportivo form = new FormSocioDeportivo();
 
                     socio.EditarSocio(Convert.ToInt32(txtBoxIdSocio.Text), txtBoxNombre.Text, txtBoxApellido.Text, comboBoxSexo.Text, Convert.ToInt32(txtBoxDni.Text), datePickerFechaNac.Value.Date, txtBoxNacionalidad.Text, comboBoxEstcivil.Text, txtBoxDireccion.Text, Convert.ToInt64(txtBoxTelefono.Text), txtBoxEmail.Text, comboBoxPago.Text);
 
                     FormExito.ConfirmarForm("Se ha editado correctamente");
-                    FormSocioDeportivo form = new FormSocioDeportivo();
+                    
                     form.ListarSociosDeportivos();
                     Close();
+                    
                     editar = false;
                 }
                 catch (Exception ex)
@@ -79,6 +82,7 @@ namespace CapaPresentacion
                     FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
                 }
             }
+            
         }
 
         private void bunifuCustomLabel17_Click(object sender, EventArgs e)

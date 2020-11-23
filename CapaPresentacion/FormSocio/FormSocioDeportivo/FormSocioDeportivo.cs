@@ -16,6 +16,7 @@ namespace CapaPresentacion
         public FormSocioDeportivo()
         {
             InitializeComponent();
+            ListarSociosDeportivos();
         }
 
         private void FormSocioDeportivo_Load(object sender, EventArgs e)

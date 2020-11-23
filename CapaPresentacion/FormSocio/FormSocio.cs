@@ -99,6 +99,8 @@ namespace CapaPresentacion
                 form.ShowDialog();
                 ListarSocios();
 
+                
+
             }
             else
             {

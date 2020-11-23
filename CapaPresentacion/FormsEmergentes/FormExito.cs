@@ -20,7 +20,10 @@ namespace CapaPresentacion
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+            FormSocioDeportivo form = new FormSocioDeportivo();
+            form.ListarSociosDeportivos();
             this.Close();
+            
         }
 
         public static void ConfirmarForm(string mensaje)
