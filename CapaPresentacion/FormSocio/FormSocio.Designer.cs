@@ -39,8 +39,8 @@
             this.txtBoxBuscarSocio = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tablaSocio = new System.Windows.Forms.DataGridView();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAgregarSocDep = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaSocio)).BeginInit();
             this.SuspendLayout();
@@ -277,42 +277,6 @@
             this.tablaSocio.Size = new System.Drawing.Size(1144, 553);
             this.tablaSocio.TabIndex = 47;
             // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 7;
-            this.bunifuFlatButton1.ButtonText = "Agregar como Socio Deportivo";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(274, 655);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(200, 50);
-            this.bunifuFlatButton1.TabIndex = 55;
-            this.bunifuFlatButton1.Text = "Agregar como Socio Deportivo";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // bunifuFlatButton2
             // 
             this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -349,14 +313,51 @@
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // btnAgregarSocDep
+            // 
+            this.btnAgregarSocDep.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnAgregarSocDep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnAgregarSocDep.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregarSocDep.BorderRadius = 7;
+            this.btnAgregarSocDep.ButtonText = "Agregar como Socio Deportivo";
+            this.btnAgregarSocDep.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarSocDep.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAgregarSocDep.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarSocDep.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAgregarSocDep.Iconimage = null;
+            this.btnAgregarSocDep.Iconimage_right = null;
+            this.btnAgregarSocDep.Iconimage_right_Selected = null;
+            this.btnAgregarSocDep.Iconimage_Selected = null;
+            this.btnAgregarSocDep.IconMarginLeft = 0;
+            this.btnAgregarSocDep.IconMarginRight = 0;
+            this.btnAgregarSocDep.IconRightVisible = true;
+            this.btnAgregarSocDep.IconRightZoom = 0D;
+            this.btnAgregarSocDep.IconVisible = true;
+            this.btnAgregarSocDep.IconZoom = 90D;
+            this.btnAgregarSocDep.IsTab = false;
+            this.btnAgregarSocDep.Location = new System.Drawing.Point(274, 655);
+            this.btnAgregarSocDep.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btnAgregarSocDep.Name = "btnAgregarSocDep";
+            this.btnAgregarSocDep.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnAgregarSocDep.OnHovercolor = System.Drawing.Color.DodgerBlue;
+            this.btnAgregarSocDep.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAgregarSocDep.selected = false;
+            this.btnAgregarSocDep.Size = new System.Drawing.Size(200, 50);
+            this.btnAgregarSocDep.TabIndex = 57;
+            this.btnAgregarSocDep.Text = "Agregar como Socio Deportivo";
+            this.btnAgregarSocDep.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAgregarSocDep.Textcolor = System.Drawing.Color.White;
+            this.btnAgregarSocDep.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarSocDep.Click += new System.EventHandler(this.btnAgregarSocDep_Click);
+            // 
             // FormSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1170, 723);
+            this.Controls.Add(this.btnAgregarSocDep);
             this.Controls.Add(this.bunifuFlatButton2);
-            this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.btnExportarPDF);
             this.Controls.Add(this.btnEditarSocio);
             this.Controls.Add(this.btnEliminarSocio);
@@ -386,7 +387,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtBoxBuscarSocio;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView tablaSocio;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAgregarSocDep;
     }
 }

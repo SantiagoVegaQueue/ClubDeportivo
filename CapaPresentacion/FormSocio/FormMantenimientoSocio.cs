@@ -36,7 +36,10 @@ namespace CapaPresentacion
             Validaciones.ValidarCampos(ref txtBoxDni, "int");
             Validaciones.ValidarCampos(ref txtBoxTelefono, "long");
             Validaciones.ValidarCampos(ref txtBoxEmail, "string");
+            Validaciones.ValidarCampos(ref txtBoxNacionalidad, "string");
             Validaciones.ValidarCampoCombo(ref comboBoxSexo, "string");
+            Validaciones.ValidarCampoCombo(ref comboBoxEstcivil, "string");
+            Validaciones.ValidarCampoCombo(ref comboBoxPago, "string");
 
             if (!editar)
             {
@@ -44,14 +47,15 @@ namespace CapaPresentacion
                 {
                     Socio socio = new Socio();
 
-                    socio.InsertarSocio(txtBoxNombre.Text, txtBoxApellido.Text, comboBoxSexo.Text, Convert.ToInt32(txtBoxDni.Text), datePickerFechaNac.Value.Date, txtBoxNacionalidad.Text, comboBoxEstcivil.Text, txtBoxDireccion.Text, Convert.ToInt64(txtBoxTelefono.Text), txtBoxEmail.Text);
-                    
-                    Close();
+                    socio.InsertarSocio(txtBoxNombre.Text, txtBoxApellido.Text, comboBoxSexo.Text, Convert.ToInt32(txtBoxDni.Text), datePickerFechaNac.Value.Date, txtBoxNacionalidad.Text, comboBoxEstcivil.Text, txtBoxDireccion.Text, Convert.ToInt64(txtBoxTelefono.Text), txtBoxEmail.Text, comboBoxPago.Text);
 
+                    FormExito.ConfirmarForm("Se ha guardado correctamente");
+                    Close();
+                    
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se pudo guardar" + ex);
+                    FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
                 }
             }
             if (editar)
@@ -62,16 +66,24 @@ namespace CapaPresentacion
                     Socio socio = new Socio();
 
 
-                    socio.EditarSocio(Convert.ToInt32(txtBoxIdSocio.Text), txtBoxNombre.Text, txtBoxApellido.Text, comboBoxSexo.Text, Convert.ToInt32(txtBoxDni.Text), datePickerFechaNac.Value.Date, txtBoxNacionalidad.Text, comboBoxEstcivil.Text, txtBoxDireccion.Text, Convert.ToInt64(txtBoxTelefono.Text), txtBoxEmail.Text);
+                    socio.EditarSocio(Convert.ToInt32(txtBoxIdSocio.Text), txtBoxNombre.Text, txtBoxApellido.Text, comboBoxSexo.Text, Convert.ToInt32(txtBoxDni.Text), datePickerFechaNac.Value.Date, txtBoxNacionalidad.Text, comboBoxEstcivil.Text, txtBoxDireccion.Text, Convert.ToInt64(txtBoxTelefono.Text), txtBoxEmail.Text, comboBoxPago.Text);
 
+                    FormExito.ConfirmarForm("Se ha editado correctamente");
+                    FormSocioDeportivo form = new FormSocioDeportivo();
+                    form.ListarSociosDeportivos();
                     Close();
                     editar = false;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("No se pudo editar" + ex);
+                    FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
                 }
             }
+        }
+
+        private void bunifuCustomLabel17_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

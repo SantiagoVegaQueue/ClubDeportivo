@@ -35,7 +35,6 @@
             this.cerrarVentana = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.btnGuardarDeporte = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtBoxNacionalidad = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -65,6 +64,11 @@
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel17 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel18 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPago = new System.Windows.Forms.ComboBox();
+            this.comboBoxInscripcion = new System.Windows.Forms.ComboBox();
+            this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.cerrarVentana)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +89,7 @@
             // 
             this.cerrarVentana.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cerrarVentana.Image = ((System.Drawing.Image)(resources.GetObject("cerrarVentana.Image")));
-            this.cerrarVentana.Location = new System.Drawing.Point(423, 11);
+            this.cerrarVentana.Location = new System.Drawing.Point(867, 11);
             this.cerrarVentana.Name = "cerrarVentana";
             this.cerrarVentana.Size = new System.Drawing.Size(26, 26);
             this.cerrarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -100,54 +104,18 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(461, 40);
+            this.panel1.Size = new System.Drawing.Size(905, 40);
             this.panel1.TabIndex = 107;
             // 
             // bunifuCustomLabel7
             // 
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(128, 69);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(349, 70);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(214, 25);
             this.bunifuCustomLabel7.TabIndex = 105;
             this.bunifuCustomLabel7.Text = "SOCIO DEPORTIVO";
-            // 
-            // btnGuardarDeporte
-            // 
-            this.btnGuardarDeporte.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.btnGuardarDeporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.btnGuardarDeporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardarDeporte.BorderRadius = 7;
-            this.btnGuardarDeporte.ButtonText = "Guardar";
-            this.btnGuardarDeporte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarDeporte.DisabledColor = System.Drawing.Color.Gray;
-            this.btnGuardarDeporte.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarDeporte.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnGuardarDeporte.Iconimage = null;
-            this.btnGuardarDeporte.Iconimage_right = null;
-            this.btnGuardarDeporte.Iconimage_right_Selected = null;
-            this.btnGuardarDeporte.Iconimage_Selected = null;
-            this.btnGuardarDeporte.IconMarginLeft = 0;
-            this.btnGuardarDeporte.IconMarginRight = 0;
-            this.btnGuardarDeporte.IconRightVisible = true;
-            this.btnGuardarDeporte.IconRightZoom = 0D;
-            this.btnGuardarDeporte.IconVisible = true;
-            this.btnGuardarDeporte.IconZoom = 90D;
-            this.btnGuardarDeporte.IsTab = false;
-            this.btnGuardarDeporte.Location = new System.Drawing.Point(25, 789);
-            this.btnGuardarDeporte.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.btnGuardarDeporte.Name = "btnGuardarDeporte";
-            this.btnGuardarDeporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.btnGuardarDeporte.OnHovercolor = System.Drawing.Color.ForestGreen;
-            this.btnGuardarDeporte.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnGuardarDeporte.selected = false;
-            this.btnGuardarDeporte.Size = new System.Drawing.Size(416, 50);
-            this.btnGuardarDeporte.TabIndex = 99;
-            this.btnGuardarDeporte.Text = "Guardar";
-            this.btnGuardarDeporte.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnGuardarDeporte.Textcolor = System.Drawing.Color.White;
-            this.btnGuardarDeporte.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // txtBoxNacionalidad
             // 
@@ -218,7 +186,7 @@
             // 
             this.bunifuCustomLabel12.AutoSize = true;
             this.bunifuCustomLabel12.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel12.Location = new System.Drawing.Point(21, 404);
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(460, 120);
             this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
             this.bunifuCustomLabel12.Size = new System.Drawing.Size(186, 23);
             this.bunifuCustomLabel12.TabIndex = 135;
@@ -234,7 +202,7 @@
             this.txtBoxEmail.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxEmail.isPassword = false;
-            this.txtBoxEmail.Location = new System.Drawing.Point(25, 452);
+            this.txtBoxEmail.Location = new System.Drawing.Point(464, 195);
             this.txtBoxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(276, 30);
@@ -246,7 +214,7 @@
             this.bunifuCustomLabel11.AutoSize = true;
             this.bunifuCustomLabel11.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.bunifuCustomLabel11.Location = new System.Drawing.Point(22, 432);
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(461, 175);
             this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(46, 16);
             this.bunifuCustomLabel11.TabIndex = 133;
@@ -262,7 +230,7 @@
             this.txtBoxDireccion.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxDireccion.isPassword = false;
-            this.txtBoxDireccion.Location = new System.Drawing.Point(25, 506);
+            this.txtBoxDireccion.Location = new System.Drawing.Point(464, 249);
             this.txtBoxDireccion.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxDireccion.Name = "txtBoxDireccion";
             this.txtBoxDireccion.Size = new System.Drawing.Size(415, 30);
@@ -274,7 +242,7 @@
             this.bunifuCustomLabel10.AutoSize = true;
             this.bunifuCustomLabel10.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(22, 486);
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(461, 229);
             this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(69, 16);
             this.bunifuCustomLabel10.TabIndex = 131;
@@ -290,7 +258,7 @@
             this.txtBoxTelefono.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBoxTelefono.isPassword = false;
-            this.txtBoxTelefono.Location = new System.Drawing.Point(320, 452);
+            this.txtBoxTelefono.Location = new System.Drawing.Point(759, 195);
             this.txtBoxTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxTelefono.Name = "txtBoxTelefono";
             this.txtBoxTelefono.Size = new System.Drawing.Size(120, 30);
@@ -302,7 +270,7 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(317, 432);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(756, 175);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(65, 16);
             this.bunifuCustomLabel2.TabIndex = 129;
@@ -445,7 +413,6 @@
             this.txtBoxIdSocio.Size = new System.Drawing.Size(33, 30);
             this.txtBoxIdSocio.TabIndex = 119;
             this.txtBoxIdSocio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBoxIdSocio.Visible = false;
             // 
             // txtBoxNombre
             // 
@@ -503,7 +470,7 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(21, 649);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(460, 374);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(117, 23);
             this.bunifuCustomLabel1.TabIndex = 143;
@@ -514,18 +481,110 @@
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(22, 676);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(461, 401);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
             this.bunifuCustomLabel9.Size = new System.Drawing.Size(133, 16);
             this.bunifuCustomLabel9.TabIndex = 144;
             this.bunifuCustomLabel9.Text = "Tipo de inscripción";
+            // 
+            // bunifuCustomLabel17
+            // 
+            this.bunifuCustomLabel17.AutoSize = true;
+            this.bunifuCustomLabel17.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
+            this.bunifuCustomLabel17.Location = new System.Drawing.Point(461, 321);
+            this.bunifuCustomLabel17.Name = "bunifuCustomLabel17";
+            this.bunifuCustomLabel17.Size = new System.Drawing.Size(171, 16);
+            this.bunifuCustomLabel17.TabIndex = 147;
+            this.bunifuCustomLabel17.Text = "Elija un método de pago";
+            // 
+            // bunifuCustomLabel18
+            // 
+            this.bunifuCustomLabel18.AutoSize = true;
+            this.bunifuCustomLabel18.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel18.Location = new System.Drawing.Point(463, 293);
+            this.bunifuCustomLabel18.Name = "bunifuCustomLabel18";
+            this.bunifuCustomLabel18.Size = new System.Drawing.Size(169, 23);
+            this.bunifuCustomLabel18.TabIndex = 146;
+            this.bunifuCustomLabel18.Text = "Método de pago";
+            this.bunifuCustomLabel18.Click += new System.EventHandler(this.bunifuCustomLabel18_Click);
+            // 
+            // comboBoxPago
+            // 
+            this.comboBoxPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.comboBoxPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxPago.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxPago.FormattingEnabled = true;
+            this.comboBoxPago.Items.AddRange(new object[] {
+            "Efectivo",
+            "Tarjeta"});
+            this.comboBoxPago.Location = new System.Drawing.Point(464, 340);
+            this.comboBoxPago.Name = "comboBoxPago";
+            this.comboBoxPago.Size = new System.Drawing.Size(415, 24);
+            this.comboBoxPago.TabIndex = 148;
+            // 
+            // comboBoxInscripcion
+            // 
+            this.comboBoxInscripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.comboBoxInscripcion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxInscripcion.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxInscripcion.FormattingEnabled = true;
+            this.comboBoxInscripcion.Items.AddRange(new object[] {
+            "Normal",
+            "Becado/a"});
+            this.comboBoxInscripcion.Location = new System.Drawing.Point(464, 420);
+            this.comboBoxInscripcion.Name = "comboBoxInscripcion";
+            this.comboBoxInscripcion.Size = new System.Drawing.Size(415, 24);
+            this.comboBoxInscripcion.TabIndex = 149;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar.BorderRadius = 7;
+            this.btnGuardar.ButtonText = "Guardar";
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnGuardar.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnGuardar.Iconimage = null;
+            this.btnGuardar.Iconimage_right = null;
+            this.btnGuardar.Iconimage_right_Selected = null;
+            this.btnGuardar.Iconimage_Selected = null;
+            this.btnGuardar.IconMarginLeft = 0;
+            this.btnGuardar.IconMarginRight = 0;
+            this.btnGuardar.IconRightVisible = true;
+            this.btnGuardar.IconRightZoom = 0D;
+            this.btnGuardar.IconVisible = true;
+            this.btnGuardar.IconZoom = 90D;
+            this.btnGuardar.IsTab = false;
+            this.btnGuardar.Location = new System.Drawing.Point(25, 506);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnGuardar.OnHovercolor = System.Drawing.Color.ForestGreen;
+            this.btnGuardar.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnGuardar.selected = false;
+            this.btnGuardar.Size = new System.Drawing.Size(854, 50);
+            this.btnGuardar.TabIndex = 150;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnGuardar.Textcolor = System.Drawing.Color.White;
+            this.btnGuardar.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // FormMantenimientoSocioDeportivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(461, 855);
+            this.ClientSize = new System.Drawing.Size(905, 568);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.comboBoxInscripcion);
+            this.Controls.Add(this.comboBoxPago);
+            this.Controls.Add(this.bunifuCustomLabel17);
+            this.Controls.Add(this.bunifuCustomLabel18);
             this.Controls.Add(this.bunifuCustomLabel9);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.txtBoxNacionalidad);
@@ -555,7 +614,6 @@
             this.Controls.Add(this.bunifuCustomLabel16);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuCustomLabel7);
-            this.Controls.Add(this.btnGuardarDeporte);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMantenimientoSocioDeportivo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -575,7 +633,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox cerrarVentana;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private Bunifu.Framework.UI.BunifuFlatButton btnGuardarDeporte;
         public Bunifu.Framework.UI.BunifuMetroTextbox txtBoxNacionalidad;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
@@ -605,5 +662,10 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        public System.Windows.Forms.ComboBox comboBoxPago;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel17;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel18;
+        public System.Windows.Forms.ComboBox comboBoxInscripcion;
+        private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
     }
 }

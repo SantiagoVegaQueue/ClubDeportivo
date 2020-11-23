@@ -94,6 +94,7 @@ namespace CapaPresentacion
                 form.txtBoxDireccion.Text = tablaSocio.CurrentRow.Cells[9].Value.ToString();
                 form.txtBoxTelefono.Text = tablaSocio.CurrentRow.Cells[10].Value.ToString();
                 form.txtBoxEmail.Text = tablaSocio.CurrentRow.Cells[11].Value.ToString();
+                form.comboBoxPago.Text = tablaSocio.CurrentRow.Cells[12].Value.ToString();
 
                 form.ShowDialog();
                 ListarSocios();
@@ -101,7 +102,7 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show("Elija una fila");
+                FormNotificacion.VerificarForm("Seleccione una fila para editar");
             }
         }
         #endregion
@@ -115,24 +116,61 @@ namespace CapaPresentacion
         {
             if (tablaSocio.SelectedRows.Count > 0)
             {
-                Socio socio = new Socio();
-                int idSocio = Convert.ToInt32(tablaSocio.CurrentRow.Cells[0].Value.ToString());
-                socio.EliminarSocio(idSocio);
+                DialogResult result = new DialogResult();
+                FormAdvertencia form = new FormAdvertencia("¿Estas seguro de eliminar?");
+                result = form.ShowDialog();
+                if(result == DialogResult.OK)
+                {
+                    Socio socio = new Socio();
+                    int idSocio = Convert.ToInt32(tablaSocio.CurrentRow.Cells[0].Value.ToString());
+                    socio.EliminarSocio(idSocio);
 
-                MessageBox.Show("Se elimino");
-                ListarSocios();
+                    FormExito.ConfirmarForm("Se eliminó correctamente");
+                    ListarSocios();
+                }
+                
             }
             else
             {
-                MessageBox.Show("Elija una fila");
+                FormNotificacion.VerificarForm("Seleccione una fila para eliminar");
             }
         }
 
 
-
-
         #endregion
 
-        
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #region Agregar socio deportivo
+        private void btnAgregarSocDep_Click(object sender, EventArgs e)
+        {
+            if (tablaSocio.SelectedRows.Count > 0)
+            {
+                DateTime fechanac;
+                DateTime.TryParse(tablaSocio.CurrentRow.Cells[6].Value.ToString(), out fechanac);
+
+                FormMantenimientoSocioDeportivo form = new FormMantenimientoSocioDeportivo();
+
+                form.txtBoxIdSocio.Text = tablaSocio.CurrentRow.Cells[0].Value.ToString();
+                form.txtBoxNombre.Text = tablaSocio.CurrentRow.Cells[2].Value.ToString();
+                form.txtBoxApellido.Text = tablaSocio.CurrentRow.Cells[3].Value.ToString();
+                form.comboBoxSexo.Text = tablaSocio.CurrentRow.Cells[4].Value.ToString();
+                form.txtBoxDni.Text = tablaSocio.CurrentRow.Cells[5].Value.ToString();
+                form.datePickerFechaNac.Value = fechanac;
+                form.txtBoxNacionalidad.Text = tablaSocio.CurrentRow.Cells[7].Value.ToString();
+                form.comboBoxEstcivil.Text = tablaSocio.CurrentRow.Cells[8].Value.ToString();
+                form.txtBoxDireccion.Text = tablaSocio.CurrentRow.Cells[9].Value.ToString();
+                form.txtBoxTelefono.Text = tablaSocio.CurrentRow.Cells[10].Value.ToString();
+                form.txtBoxEmail.Text = tablaSocio.CurrentRow.Cells[11].Value.ToString();
+                form.comboBoxPago.Text = tablaSocio.CurrentRow.Cells[12].Value.ToString();
+
+                form.ShowDialog();
+            }
+        }
+
+        #endregion
     }
 }

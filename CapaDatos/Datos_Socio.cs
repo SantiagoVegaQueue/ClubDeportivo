@@ -48,7 +48,7 @@ namespace CapaDatos
             return tabla;
         }
 
-        public void InsertarSocio(string nombre, string apellido, string sexo, int dni, DateTime fechanac, string nacionalidad, string estadocivil, string direccion, long telefono, string email)
+        public void InsertarSocio(string nombre, string apellido, string sexo, int dni, DateTime fechanac, string nacionalidad, string estadocivil, string direccion, long telefono, string email, string tipoPago)
         {
             SqlCommand cmd = new SqlCommand("SP_INSERTARSOCIO", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -64,6 +64,7 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@DIRECCION", direccion);
             cmd.Parameters.AddWithValue("@TELEFONO", telefono);
             cmd.Parameters.AddWithValue("@EMAIL", email);
+            cmd.Parameters.AddWithValue("@TIPOPAGO", tipoPago);
 
             cmd.ExecuteNonQuery();
 
@@ -71,7 +72,7 @@ namespace CapaDatos
 
         }
 
-        public void EditarSocio(int idSocio, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string nacionalidad, string estadocivil, string direccion, long telefono, string email)
+        public void EditarSocio(int idSocio, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string nacionalidad, string estadocivil, string direccion, long telefono, string email, string tipoPago)
         {
             SqlCommand cmd = new SqlCommand("SP_EDITARSOCIO", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -88,7 +89,8 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@DIRECCION", direccion);
             cmd.Parameters.AddWithValue("@TELEFONO", telefono);
             cmd.Parameters.AddWithValue("@EMAIL", email);
-
+            cmd.Parameters.AddWithValue("@TIPOPAGO", tipoPago);
+            
             cmd.ExecuteNonQuery();
 
             conexion.Close();

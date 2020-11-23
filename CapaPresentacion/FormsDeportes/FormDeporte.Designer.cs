@@ -78,7 +78,7 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Montserrat", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(450, 19);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(440, 19);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(329, 29);
@@ -107,7 +107,7 @@
             this.btnEditarDeporte.IconVisible = true;
             this.btnEditarDeporte.IconZoom = 90D;
             this.btnEditarDeporte.IsTab = false;
-            this.btnEditarDeporte.Location = new System.Drawing.Point(494, 661);
+            this.btnEditarDeporte.Location = new System.Drawing.Point(518, 661);
             this.btnEditarDeporte.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnEditarDeporte.Name = "btnEditarDeporte";
             this.btnEditarDeporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -144,7 +144,7 @@
             this.btnEliminarDeporte.IconVisible = true;
             this.btnEliminarDeporte.IconZoom = 90D;
             this.btnEliminarDeporte.IsTab = false;
-            this.btnEliminarDeporte.Location = new System.Drawing.Point(704, 661);
+            this.btnEliminarDeporte.Location = new System.Drawing.Point(728, 661);
             this.btnEliminarDeporte.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnEliminarDeporte.Name = "btnEliminarDeporte";
             this.btnEliminarDeporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -181,7 +181,7 @@
             this.btnAgregarDeporte.IconVisible = true;
             this.btnAgregarDeporte.IconZoom = 90D;
             this.btnAgregarDeporte.IsTab = false;
-            this.btnAgregarDeporte.Location = new System.Drawing.Point(284, 661);
+            this.btnAgregarDeporte.Location = new System.Drawing.Point(308, 661);
             this.btnAgregarDeporte.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnAgregarDeporte.Name = "btnAgregarDeporte";
             this.btnAgregarDeporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -218,7 +218,7 @@
             this.btnExportarPDF.IconVisible = true;
             this.btnExportarPDF.IconZoom = 50D;
             this.btnExportarPDF.IsTab = false;
-            this.btnExportarPDF.Location = new System.Drawing.Point(956, 31);
+            this.btnExportarPDF.Location = new System.Drawing.Point(957, 31);
             this.btnExportarPDF.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnExportarPDF.Name = "btnExportarPDF";
             this.btnExportarPDF.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));

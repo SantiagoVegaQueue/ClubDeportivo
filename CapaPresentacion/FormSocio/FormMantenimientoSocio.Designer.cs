@@ -63,6 +63,9 @@
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel17 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboBoxPago = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cerrarVentana)).BeginInit();
             this.SuspendLayout();
@@ -349,7 +352,7 @@
             this.btnGuardar.IconVisible = true;
             this.btnGuardar.IconZoom = 90D;
             this.btnGuardar.IsTab = false;
-            this.btnGuardar.Location = new System.Drawing.Point(44, 548);
+            this.btnGuardar.Location = new System.Drawing.Point(45, 691);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -501,12 +504,51 @@
             this.bunifuDragControl2.TargetControl = this;
             this.bunifuDragControl2.Vertical = true;
             // 
+            // bunifuCustomLabel16
+            // 
+            this.bunifuCustomLabel16.AutoSize = true;
+            this.bunifuCustomLabel16.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel16.Location = new System.Drawing.Point(41, 532);
+            this.bunifuCustomLabel16.Name = "bunifuCustomLabel16";
+            this.bunifuCustomLabel16.Size = new System.Drawing.Size(59, 23);
+            this.bunifuCustomLabel16.TabIndex = 117;
+            this.bunifuCustomLabel16.Text = "Pago";
+            // 
+            // bunifuCustomLabel17
+            // 
+            this.bunifuCustomLabel17.AutoSize = true;
+            this.bunifuCustomLabel17.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
+            this.bunifuCustomLabel17.Location = new System.Drawing.Point(42, 560);
+            this.bunifuCustomLabel17.Name = "bunifuCustomLabel17";
+            this.bunifuCustomLabel17.Size = new System.Drawing.Size(118, 16);
+            this.bunifuCustomLabel17.TabIndex = 116;
+            this.bunifuCustomLabel17.Text = "Método de pago";
+            this.bunifuCustomLabel17.Click += new System.EventHandler(this.bunifuCustomLabel17_Click);
+            // 
+            // comboBoxPago
+            // 
+            this.comboBoxPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.comboBoxPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxPago.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxPago.FormattingEnabled = true;
+            this.comboBoxPago.Items.AddRange(new object[] {
+            "Efectivo",
+            "Tarjeta"});
+            this.comboBoxPago.Location = new System.Drawing.Point(45, 579);
+            this.comboBoxPago.Name = "comboBoxPago";
+            this.comboBoxPago.Size = new System.Drawing.Size(200, 24);
+            this.comboBoxPago.TabIndex = 118;
+            // 
             // FormMantenimientoSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(506, 627);
+            this.ClientSize = new System.Drawing.Size(506, 753);
+            this.Controls.Add(this.comboBoxPago);
+            this.Controls.Add(this.bunifuCustomLabel16);
+            this.Controls.Add(this.bunifuCustomLabel17);
             this.Controls.Add(this.txtBoxNacionalidad);
             this.Controls.Add(this.bunifuCustomLabel15);
             this.Controls.Add(this.bunifuCustomLabel14);
@@ -582,5 +624,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel16;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel17;
+        public System.Windows.Forms.ComboBox comboBoxPago;
     }
 }
