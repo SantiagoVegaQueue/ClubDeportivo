@@ -31,19 +31,6 @@ namespace CapaNegocio
         }
 
 
-
-        /*public override double CalcularPrecioCuota()
-        {
-            base.CalcularPrecioCuota();
-
-            if (CantDeportes>=3)
-            {
-                this.PrecioFinal1 = PrecioFinal1 - (PrecioFinal1 * 0.10);
-            }
-
-            return this.PrecioFinal1;
-        }*/
-
         public override DataTable ListarSocio()
         {
             Datos_SocioDeportivo socio = new Datos_SocioDeportivo();
