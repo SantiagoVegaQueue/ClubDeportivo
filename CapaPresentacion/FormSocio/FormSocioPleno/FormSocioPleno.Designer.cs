@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tablaSocioPleno = new System.Windows.Forms.DataGridView();
+            this.btnCalcularPrecioFinal = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.tablaSocioPleno)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,8 +75,44 @@
             this.tablaSocioPleno.ReadOnly = true;
             this.tablaSocioPleno.RowHeadersVisible = false;
             this.tablaSocioPleno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.tablaSocioPleno.Size = new System.Drawing.Size(1144, 592);
+            this.tablaSocioPleno.Size = new System.Drawing.Size(1144, 581);
             this.tablaSocioPleno.TabIndex = 48;
+            // 
+            // btnCalcularPrecioFinal
+            // 
+            this.btnCalcularPrecioFinal.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnCalcularPrecioFinal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnCalcularPrecioFinal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCalcularPrecioFinal.BorderRadius = 7;
+            this.btnCalcularPrecioFinal.ButtonText = "Calcular precio final";
+            this.btnCalcularPrecioFinal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalcularPrecioFinal.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCalcularPrecioFinal.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcularPrecioFinal.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCalcularPrecioFinal.Iconimage = null;
+            this.btnCalcularPrecioFinal.Iconimage_right = null;
+            this.btnCalcularPrecioFinal.Iconimage_right_Selected = null;
+            this.btnCalcularPrecioFinal.Iconimage_Selected = null;
+            this.btnCalcularPrecioFinal.IconMarginLeft = 0;
+            this.btnCalcularPrecioFinal.IconMarginRight = 0;
+            this.btnCalcularPrecioFinal.IconRightVisible = true;
+            this.btnCalcularPrecioFinal.IconRightZoom = 0D;
+            this.btnCalcularPrecioFinal.IconVisible = true;
+            this.btnCalcularPrecioFinal.IconZoom = 90D;
+            this.btnCalcularPrecioFinal.IsTab = false;
+            this.btnCalcularPrecioFinal.Location = new System.Drawing.Point(482, 661);
+            this.btnCalcularPrecioFinal.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btnCalcularPrecioFinal.Name = "btnCalcularPrecioFinal";
+            this.btnCalcularPrecioFinal.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnCalcularPrecioFinal.OnHovercolor = System.Drawing.Color.DarkViolet;
+            this.btnCalcularPrecioFinal.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnCalcularPrecioFinal.selected = false;
+            this.btnCalcularPrecioFinal.Size = new System.Drawing.Size(200, 50);
+            this.btnCalcularPrecioFinal.TabIndex = 67;
+            this.btnCalcularPrecioFinal.Text = "Calcular precio final";
+            this.btnCalcularPrecioFinal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCalcularPrecioFinal.Textcolor = System.Drawing.Color.White;
+            this.btnCalcularPrecioFinal.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // FormSocioPleno
             // 
@@ -83,6 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1170, 723);
+            this.Controls.Add(this.btnCalcularPrecioFinal);
             this.Controls.Add(this.tablaSocioPleno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSocioPleno";
@@ -96,5 +134,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView tablaSocioPleno;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCalcularPrecioFinal;
     }
 }

@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 using System.Configuration;
-
 
 namespace CapaDatos
 {
-    public class Datos_SocioDeportivo
+    public class Datos_SocioPleno
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
-        public DataTable ListarSocioDeportivo()
+        public DataTable ListarSocioPleno()
         {
             DataTable tabla = new DataTable();
             SqlDataReader LeerFilas;
-            SqlCommand cmd = new SqlCommand("SP_LISTARSOCIODEPORTIVO", conexion);
+            SqlCommand cmd = new SqlCommand("SP_LISTARSOCIOPLENO", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
@@ -31,20 +30,19 @@ namespace CapaDatos
             return tabla;
         }
 
-        public void InsertarSocioDeportivo(int idSocio, string inscripcion)
+        public void InsertarSocioPleno(int idSocio, string tipoPlan)
         {
-            SqlCommand cmd = new SqlCommand("SP_INSERTARSOCIODEPORTIVO", conexion);
+            SqlCommand cmd = new SqlCommand("SP_INSERTARSOCIOPLENO", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
 
             cmd.Parameters.AddWithValue("@IDSOCIO", idSocio);
-            cmd.Parameters.AddWithValue("@INSCRIPCION", inscripcion);
+            cmd.Parameters.AddWithValue("@TIPOPLAN", tipoPlan);
 
             cmd.ExecuteNonQuery();
 
             conexion.Close();
 
         }
-
     }
 }

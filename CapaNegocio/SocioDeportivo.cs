@@ -48,6 +48,7 @@ namespace CapaNegocio
         public override double Calcularpreciofinal()
         {
             base.calcularPrecioCuota();
+
             if (Inscripcion == "Normal")
             {
                 this.PrecioFinal1 = base.calcularPrecioCuota();
