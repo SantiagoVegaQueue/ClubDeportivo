@@ -31,7 +31,7 @@ namespace CapaPresentacion
 
         private void FormMantenimientoSocioDeportivo_Load(object sender, EventArgs e)
         {
-            SocioDeportivo socio = new SocioDeportivo();
+            
             
         }
 
@@ -58,8 +58,8 @@ namespace CapaPresentacion
 
                 socio.InsertarSocioDeportivo(Convert.ToInt32(txtBoxIdSocio.Text), comboBoxInscripcion.Text);
                 FormExito.ConfirmarForm("Se ha guardado correctamente");
-                FormSocioDeportivo form = new FormSocioDeportivo();
-                form.ListarSociosDeportivos();
+                
+                
                 Close();
                 
             }

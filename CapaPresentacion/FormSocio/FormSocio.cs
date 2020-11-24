@@ -80,7 +80,7 @@ namespace CapaPresentacion
                 DateTime.TryParse(tablaSocio.CurrentRow.Cells[6].Value.ToString(), out fechanac);
 
                 FormMantenimientoSocio form = new FormMantenimientoSocio();
-
+                
                 form.editar = true;
 
                 form.txtBoxIdSocio.Text = tablaSocio.CurrentRow.Cells[0].Value.ToString();
@@ -153,8 +153,37 @@ namespace CapaPresentacion
             {
                 DateTime fechanac;
                 DateTime.TryParse(tablaSocio.CurrentRow.Cells[6].Value.ToString(), out fechanac);
-
                 FormMantenimientoSocioDeportivo form = new FormMantenimientoSocioDeportivo();
+                
+                form.txtBoxIdSocio.Text = tablaSocio.CurrentRow.Cells[0].Value.ToString();
+                form.txtBoxNombre.Text = tablaSocio.CurrentRow.Cells[2].Value.ToString();
+                form.txtBoxApellido.Text = tablaSocio.CurrentRow.Cells[3].Value.ToString();
+                form.comboBoxSexo.Text = tablaSocio.CurrentRow.Cells[4].Value.ToString();
+                form.txtBoxDni.Text = tablaSocio.CurrentRow.Cells[5].Value.ToString();
+                form.datePickerFechaNac.Value = fechanac;
+                form.txtBoxNacionalidad.Text = tablaSocio.CurrentRow.Cells[7].Value.ToString();
+                form.comboBoxEstcivil.Text = tablaSocio.CurrentRow.Cells[8].Value.ToString();
+                form.txtBoxDireccion.Text = tablaSocio.CurrentRow.Cells[9].Value.ToString();
+                form.txtBoxTelefono.Text = tablaSocio.CurrentRow.Cells[10].Value.ToString();
+                form.txtBoxEmail.Text = tablaSocio.CurrentRow.Cells[11].Value.ToString();
+                form.comboBoxPago.Text = tablaSocio.CurrentRow.Cells[12].Value.ToString();
+
+                form.ShowDialog();
+                
+            }
+        }
+
+        #endregion
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            if (tablaSocio.SelectedRows.Count > 0)
+            {
+                DateTime fechanac;
+                DateTime.TryParse(tablaSocio.CurrentRow.Cells[6].Value.ToString(), out fechanac);
+                
+
+                FormMantenimientoSocioPleno form = new FormMantenimientoSocioPleno();
 
                 form.txtBoxIdSocio.Text = tablaSocio.CurrentRow.Cells[0].Value.ToString();
                 form.txtBoxNombre.Text = tablaSocio.CurrentRow.Cells[2].Value.ToString();
@@ -170,9 +199,13 @@ namespace CapaPresentacion
                 form.comboBoxPago.Text = tablaSocio.CurrentRow.Cells[12].Value.ToString();
 
                 form.ShowDialog();
+                
             }
         }
 
-        #endregion
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

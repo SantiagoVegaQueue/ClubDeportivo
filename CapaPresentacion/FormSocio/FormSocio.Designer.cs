@@ -39,8 +39,9 @@
             this.txtBoxBuscarSocio = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tablaSocio = new System.Windows.Forms.DataGridView();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAgregarSocioPleno = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAgregarSocDep = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaSocio)).BeginInit();
             this.SuspendLayout();
@@ -277,41 +278,42 @@
             this.tablaSocio.Size = new System.Drawing.Size(1144, 553);
             this.tablaSocio.TabIndex = 47;
             // 
-            // bunifuFlatButton2
+            // btnAgregarSocioPleno
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 7;
-            this.bunifuFlatButton2.ButtonText = "Agregar como Socio Pleno";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = null;
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(484, 655);
-            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.DarkViolet;
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(200, 50);
-            this.bunifuFlatButton2.TabIndex = 56;
-            this.bunifuFlatButton2.Text = "Agregar como Socio Pleno";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarSocioPleno.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnAgregarSocioPleno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnAgregarSocioPleno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregarSocioPleno.BorderRadius = 7;
+            this.btnAgregarSocioPleno.ButtonText = "Agregar como Socio Pleno";
+            this.btnAgregarSocioPleno.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarSocioPleno.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAgregarSocioPleno.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarSocioPleno.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAgregarSocioPleno.Iconimage = null;
+            this.btnAgregarSocioPleno.Iconimage_right = null;
+            this.btnAgregarSocioPleno.Iconimage_right_Selected = null;
+            this.btnAgregarSocioPleno.Iconimage_Selected = null;
+            this.btnAgregarSocioPleno.IconMarginLeft = 0;
+            this.btnAgregarSocioPleno.IconMarginRight = 0;
+            this.btnAgregarSocioPleno.IconRightVisible = true;
+            this.btnAgregarSocioPleno.IconRightZoom = 0D;
+            this.btnAgregarSocioPleno.IconVisible = true;
+            this.btnAgregarSocioPleno.IconZoom = 90D;
+            this.btnAgregarSocioPleno.IsTab = false;
+            this.btnAgregarSocioPleno.Location = new System.Drawing.Point(484, 655);
+            this.btnAgregarSocioPleno.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btnAgregarSocioPleno.Name = "btnAgregarSocioPleno";
+            this.btnAgregarSocioPleno.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnAgregarSocioPleno.OnHovercolor = System.Drawing.Color.DarkViolet;
+            this.btnAgregarSocioPleno.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAgregarSocioPleno.selected = false;
+            this.btnAgregarSocioPleno.Size = new System.Drawing.Size(200, 50);
+            this.btnAgregarSocioPleno.TabIndex = 56;
+            this.btnAgregarSocioPleno.Text = "Agregar como Socio Pleno";
+            this.btnAgregarSocioPleno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAgregarSocioPleno.Textcolor = System.Drawing.Color.White;
+            this.btnAgregarSocioPleno.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarSocioPleno.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // btnAgregarSocDep
             // 
@@ -350,14 +352,25 @@
             this.btnAgregarSocDep.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarSocDep.Click += new System.EventHandler(this.btnAgregarSocDep_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(763, 67);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 58;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1170, 723);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregarSocDep);
-            this.Controls.Add(this.bunifuFlatButton2);
+            this.Controls.Add(this.btnAgregarSocioPleno);
             this.Controls.Add(this.btnExportarPDF);
             this.Controls.Add(this.btnEditarSocio);
             this.Controls.Add(this.btnEliminarSocio);
@@ -387,7 +400,8 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtBoxBuscarSocio;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView tablaSocio;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAgregarSocioPleno;
         private Bunifu.Framework.UI.BunifuFlatButton btnAgregarSocDep;
+        private System.Windows.Forms.Button button1;
     }
 }

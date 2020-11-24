@@ -12,6 +12,7 @@ namespace CapaNegocio
     {
         private string inscripcion;
 
+        #region Constructores
         public SocioDeportivo(string tipoPago, double precioBase, string inscripcion)
         {
             this.TipoPago1 = tipoPago;
@@ -29,6 +30,8 @@ namespace CapaNegocio
         {
 
         }
+        #endregion
+
 
 
         public override DataTable ListarSocio()

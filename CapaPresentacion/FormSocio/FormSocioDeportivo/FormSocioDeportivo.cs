@@ -64,6 +64,8 @@ namespace CapaPresentacion
             if (tablaSocioDeportivo.SelectedRows.Count > 0)
             {
                 FormResumen form = new FormResumen();
+
+                
                 form.lblCodigo.Text = tablaSocioDeportivo.CurrentRow.Cells[2].Value.ToString();
                 form.lblNombre.Text = tablaSocioDeportivo.CurrentRow.Cells[3].Value.ToString();
                 form.lblApellido.Text = tablaSocioDeportivo.CurrentRow.Cells[4].Value.ToString();
