@@ -27,11 +27,11 @@ namespace CapaPresentacion
         {
             try
             {
-                SocioPleno socio = new SocioPleno();
+                //SocioPleno socio = new SocioPleno();
 
                 
 
-                socio.InsertarSocioPleno(Convert.ToInt32(txtBoxIdSocio.Text), comboBoxTipoPlan.Text);
+               // socio.InsertarSocioPleno(Convert.ToInt32(txtBoxIdSocio.Text), comboBoxTipoPlan.Text);
                 FormExito.ConfirmarForm("Se ha guardado correctamente");
                 
 

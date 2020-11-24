@@ -25,8 +25,8 @@ namespace CapaPresentacion
         }
         public void ListarSocioPlenos()
         {
-            SocioPleno socio = new SocioPleno();
-            tablaSocioPleno.DataSource = socio.ListarSocio();
+            //SocioPleno socio = new SocioPleno();
+            //tablaSocioPleno.DataSource = socio.ListarSocio();
 
         }
         public void DiseñoTabla()

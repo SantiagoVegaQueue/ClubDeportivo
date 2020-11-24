@@ -103,11 +103,6 @@ namespace CapaNegocio
         {
             return PrecioFinal1;
         }
-
-
-       
-
-        
         
     }
 }

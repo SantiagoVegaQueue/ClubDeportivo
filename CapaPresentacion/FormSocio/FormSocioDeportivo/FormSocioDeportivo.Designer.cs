@@ -161,6 +161,7 @@
             this.tablaSocioDeportivo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tablaSocioDeportivo.Size = new System.Drawing.Size(1143, 555);
             this.tablaSocioDeportivo.TabIndex = 57;
+            this.tablaSocioDeportivo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaSocioDeportivo_CellContentClick);
             // 
             // btnCalcularPrecioFinal
             // 
