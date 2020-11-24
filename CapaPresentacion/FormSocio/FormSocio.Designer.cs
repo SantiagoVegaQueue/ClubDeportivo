@@ -41,7 +41,6 @@
             this.tablaSocio = new System.Windows.Forms.DataGridView();
             this.btnAgregarSocioPleno = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAgregarSocDep = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaSocio)).BeginInit();
             this.SuspendLayout();
@@ -352,23 +351,12 @@
             this.btnAgregarSocDep.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarSocDep.Click += new System.EventHandler(this.btnAgregarSocDep_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(763, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 58;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FormSocio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1170, 723);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregarSocDep);
             this.Controls.Add(this.btnAgregarSocioPleno);
             this.Controls.Add(this.btnExportarPDF);
@@ -402,6 +390,5 @@
         private System.Windows.Forms.DataGridView tablaSocio;
         private Bunifu.Framework.UI.BunifuFlatButton btnAgregarSocioPleno;
         private Bunifu.Framework.UI.BunifuFlatButton btnAgregarSocDep;
-        private System.Windows.Forms.Button button1;
     }
 }

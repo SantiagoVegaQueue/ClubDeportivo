@@ -54,21 +54,26 @@ namespace CapaPresentacion
         {
             try
             {
-                //SocioDeportivo socio = new SocioDeportivo();
+                SocioDeportivo socio = new SocioDeportivo();
 
-                //socio.InsertarSocioDeportivo(Convert.ToInt32(txtBoxIdSocio.Text), comboBoxInscripcion.Text);
+                socio.InsertarSocioDeportivo(Convert.ToInt32(txtBoxIdSocio.Text), comboBoxInscripcion.Text);
                 FormExito.ConfirmarForm("Se ha guardado correctamente");
 
-                FormSocioDeportivo form = new FormSocioDeportivo();
-                form.ListarSociosDeportivos();
-                Close();
                 
+                Close();
+                lista();
             }
             catch(Exception)
             {
                 FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
 
             }
+        }
+
+        public void lista()
+        {
+            FormSocioDeportivo form = new FormSocioDeportivo();
+            form.ListarSociosDeportivos();
         }
     }
 }

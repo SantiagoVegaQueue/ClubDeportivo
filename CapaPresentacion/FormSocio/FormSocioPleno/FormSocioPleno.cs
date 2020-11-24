@@ -16,7 +16,7 @@ namespace CapaPresentacion
         public FormSocioPleno()
         {
             InitializeComponent();
-            ListarSocioPlenos();
+            
         }
         private void FormSocioPleno_Load(object sender, EventArgs e)
         {

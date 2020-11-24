@@ -38,7 +38,8 @@ namespace CapaPresentacion
         public void ListarSociosDeportivos()
         {
             SocioDeportivo socio = new SocioDeportivo();
-            tablaSocioDeportivo.DataSource = socio.ListarSocio();
+            
+            tablaSocioDeportivo.DataSource = socio.ListarSocioDeportivo();
         }
 
         #endregion
@@ -48,6 +49,7 @@ namespace CapaPresentacion
         {
             FormMantenimientoSocioDeportivo form = new FormMantenimientoSocioDeportivo();
             form.ShowDialog();
+            ListarSociosDeportivos();
         }
 
         #region Basura
@@ -74,11 +76,11 @@ namespace CapaPresentacion
                 form.lblTelefono.Text = tablaSocioDeportivo.CurrentRow.Cells[7].Value.ToString();
                 form.lblTipoPago.Text = tablaSocioDeportivo.CurrentRow.Cells[8].Value.ToString();
                 form.lblInscripcion.Text = tablaSocioDeportivo.CurrentRow.Cells[9].Value.ToString();
-                
-               
 
+
+                ListarSociosDeportivos();
                 form.ShowDialog();
-
+                
             }
             
         }

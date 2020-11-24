@@ -49,10 +49,9 @@ namespace CapaPresentacion
                     socio.InsertarSocio(txtBoxNombre.Text, txtBoxApellido.Text, comboBoxSexo.Text, Convert.ToInt32(txtBoxDni.Text), datePickerFechaNac.Value.Date, txtBoxNacionalidad.Text, comboBoxEstcivil.Text, txtBoxDireccion.Text, Convert.ToInt64(txtBoxTelefono.Text), txtBoxEmail.Text, comboBoxPago.Text);
                     
                     FormExito.ConfirmarForm("Se ha guardado correctamente");
-                    
-                    
+                         
                     Close();
-                    
+
                 }
                 catch (Exception ex)
                 {
@@ -61,22 +60,17 @@ namespace CapaPresentacion
             }
             if (editar)
             {
-
+                
                 try
                 {
                     Socio socio = new Socio();
 
-                    FormSocioDeportivo form1 = new FormSocioDeportivo();
-
                     socio.EditarSocio(Convert.ToInt32(txtBoxIdSocio.Text), txtBoxNombre.Text, txtBoxApellido.Text, comboBoxSexo.Text, Convert.ToInt32(txtBoxDni.Text), datePickerFechaNac.Value.Date, txtBoxNacionalidad.Text, comboBoxEstcivil.Text, txtBoxDireccion.Text, Convert.ToInt64(txtBoxTelefono.Text), txtBoxEmail.Text, comboBoxPago.Text);
                     
                     FormExito.ConfirmarForm("Se ha editado correctamente");
-                    form1.ListarSociosDeportivos();
 
                     Close();
 
-                    
-                    
                     editar = false;
                     
                 }

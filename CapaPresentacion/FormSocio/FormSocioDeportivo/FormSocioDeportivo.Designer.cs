@@ -162,6 +162,7 @@
             this.tablaSocioDeportivo.Size = new System.Drawing.Size(1143, 555);
             this.tablaSocioDeportivo.TabIndex = 57;
             this.tablaSocioDeportivo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaSocioDeportivo_CellContentClick);
+            this.tablaSocioDeportivo.MouseHover += new System.EventHandler(this.FormSocioDeportivo_Load);
             // 
             // btnCalcularPrecioFinal
             // 
