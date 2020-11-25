@@ -150,7 +150,7 @@ namespace CapaPresentacion
                 DateTime fechanac;
                 DateTime.TryParse(tablaSocio.CurrentRow.Cells[6].Value.ToString(), out fechanac);
                 FormMantenimientoSocioDeportivo form = new FormMantenimientoSocioDeportivo();
-                
+                form.invalidarTextbox();
                 form.txtBoxIdSocio.Text = tablaSocio.CurrentRow.Cells[0].Value.ToString();
                 form.txtBoxNombre.Text = tablaSocio.CurrentRow.Cells[2].Value.ToString();
                 form.txtBoxApellido.Text = tablaSocio.CurrentRow.Cells[3].Value.ToString();

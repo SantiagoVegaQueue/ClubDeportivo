@@ -25,9 +25,18 @@ namespace CapaPresentacion
 
         private void btnCalcularPrecioFinal_Click(object sender, EventArgs e)
         {
-            SocioDeportivo socio = new SocioDeportivo(lblTipoPago.Text, Convert.ToDouble(lblPrecioBase.Text), lblInscripcion.Text);
-            this.precioFinal = socio.Calcularpreciofinal();
-            lblPrecioFinal.Text = Convert.ToString(this.precioFinal);
+            Validaciones.ValidarCampos(ref txtBoxPrecioBase, "double");
+            try
+            {
+                SocioDeportivo socio = new SocioDeportivo(lblTipoPago.Text, Convert.ToDouble(txtBoxPrecioBase.Text), lblInscripcion.Text);
+                this.precioFinal = socio.Calcularpreciofinal();
+                lblPrecioFinal.Text = Convert.ToString(this.precioFinal);
+            }
+            catch (Exception)
+            {
+                FormNotificacion.VerificarForm("Los datos ingresados son incorrectos");
+            }
+            
            
         }
     }

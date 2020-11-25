@@ -40,7 +40,11 @@ namespace CapaNegocio
         #endregion
 
         #region Buscar
-
+        public override DataTable BuscarSocio(string buscar)
+        {
+            Datos_SocioDeportivo socio = new Datos_SocioDeportivo();
+            return socio.BuscarSocioDeportivo(buscar);
+        }
         #endregion
 
         #region Insertar

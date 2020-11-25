@@ -41,7 +41,11 @@ namespace CapaNegocio
         #endregion
 
         #region Buscar
-
+        public override DataTable BuscarSocio(string buscar)
+        {
+            Datos_SocioPleno socio = new Datos_SocioPleno();
+            return socio.BuscarSocioPleno(buscar);
+        }
         #endregion
 
         #region Insertar
@@ -68,11 +72,12 @@ namespace CapaNegocio
         #region Precio final
         public override double Calcularpreciofinal()
         {
-            base.Calcularpreciofinal();
+
+            double precioBase = base.calcularPrecioCuota();
 
             if (TipoPlan == "Individual")
             {
-                this.PrecioFinal1 = this.PrecioFinal1 + (this.PrecioFinal1 * 0.25);
+                this.PrecioFinal1 = precioBase + (precioBase * 0.35);
             }
 
             if (TipoPlan == "Familiar")
@@ -83,7 +88,6 @@ namespace CapaNegocio
         }
 
         #endregion
-
 
     }
 }

@@ -125,9 +125,13 @@ namespace CapaPresentacion
 
         private void panelContedorDeForms_Paint(object sender, PaintEventArgs e)
         {
-
+            abrirFormsPanelContenedor<FormSocio>();
+            mostrarSubMenu(panelSubMenuSocios);
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }

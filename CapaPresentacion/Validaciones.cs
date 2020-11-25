@@ -83,7 +83,12 @@ namespace CapaPresentacion
             switch (tipo)
             {
                 case "string":
-                    if (campo.Text != "")
+                    if (campo.Text == "")
+                    {
+                        campo.BackColor = System.Drawing.Color.FromArgb(255, 183, 170);
+                       
+                    }
+                    else
                     {
                         try
                         {
@@ -95,15 +100,13 @@ namespace CapaPresentacion
                             campo.BackColor = System.Drawing.Color.FromArgb(255, 183, 170);
                         }
                     }
-                    else
-                    {
-                        campo.BackColor = System.Drawing.Color.FromArgb(255, 183, 170);
-                    }
                     break;
                 default:
                     break;
             }
        
         }
+
+        
     }
 }

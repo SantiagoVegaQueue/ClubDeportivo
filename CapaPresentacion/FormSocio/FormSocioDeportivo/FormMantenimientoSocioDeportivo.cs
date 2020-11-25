@@ -49,6 +49,23 @@ namespace CapaPresentacion
         {
 
         }
+        public void invalidarTextbox()
+        {
+            txtBoxIdSocio.Visible = false;
+            txtBoxApellido.Enabled = false;
+            txtBoxNombre.Enabled = false;
+            txtBoxDni.Enabled = false;
+            txtBoxNacionalidad.Enabled = false;
+            comboBoxEstcivil.Enabled = false;
+            comboBoxSexo.Enabled = false;
+            txtBoxEmail.Enabled = false;
+            txtBoxDireccion.Enabled = false;
+            txtBoxTelefono.Enabled = false;
+            comboBoxPago.Enabled = false;
+            datePickerFechaNac.Enabled = false;
+
+            comboBoxInscripcion.Focus();
+        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {

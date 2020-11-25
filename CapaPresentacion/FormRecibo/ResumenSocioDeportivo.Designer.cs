@@ -53,9 +53,9 @@
             this.lblTelefono = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblTipoPago = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblInscripcion = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblPrecioBase = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblPrecioFinal = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.txtBoxPrecioBase = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cerrarVentana)).BeginInit();
             this.SuspendLayout();
@@ -324,17 +324,6 @@
             this.lblInscripcion.Size = new System.Drawing.Size(0, 16);
             this.lblInscripcion.TabIndex = 144;
             // 
-            // lblPrecioBase
-            // 
-            this.lblPrecioBase.AutoSize = true;
-            this.lblPrecioBase.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecioBase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
-            this.lblPrecioBase.Location = new System.Drawing.Point(156, 339);
-            this.lblPrecioBase.Name = "lblPrecioBase";
-            this.lblPrecioBase.Size = new System.Drawing.Size(43, 16);
-            this.lblPrecioBase.TabIndex = 145;
-            this.lblPrecioBase.Text = "9000";
-            // 
             // lblPrecioFinal
             // 
             this.lblPrecioFinal.AutoSize = true;
@@ -352,14 +341,31 @@
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // txtBoxPrecioBase
+            // 
+            this.txtBoxPrecioBase.BorderColorFocused = System.Drawing.Color.LimeGreen;
+            this.txtBoxPrecioBase.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBoxPrecioBase.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(23)))));
+            this.txtBoxPrecioBase.BorderThickness = 1;
+            this.txtBoxPrecioBase.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBoxPrecioBase.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPrecioBase.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtBoxPrecioBase.isPassword = false;
+            this.txtBoxPrecioBase.Location = new System.Drawing.Point(160, 337);
+            this.txtBoxPrecioBase.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBoxPrecioBase.Name = "txtBoxPrecioBase";
+            this.txtBoxPrecioBase.Size = new System.Drawing.Size(114, 18);
+            this.txtBoxPrecioBase.TabIndex = 171;
+            this.txtBoxPrecioBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // FormResumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(349, 481);
+            this.Controls.Add(this.txtBoxPrecioBase);
             this.Controls.Add(this.lblPrecioFinal);
-            this.Controls.Add(this.lblPrecioBase);
             this.Controls.Add(this.lblInscripcion);
             this.Controls.Add(this.lblTipoPago);
             this.Controls.Add(this.lblTelefono);
@@ -402,7 +408,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnCalcularPrecioFinal;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         public Bunifu.Framework.UI.BunifuCustomLabel lblPrecioFinal;
-        public Bunifu.Framework.UI.BunifuCustomLabel lblPrecioBase;
         public Bunifu.Framework.UI.BunifuCustomLabel lblInscripcion;
         public Bunifu.Framework.UI.BunifuCustomLabel lblTipoPago;
         public Bunifu.Framework.UI.BunifuCustomLabel lblTelefono;
@@ -421,5 +426,6 @@
         public Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
         public Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         public Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        public Bunifu.Framework.UI.BunifuMetroTextbox txtBoxPrecioBase;
     }
 }

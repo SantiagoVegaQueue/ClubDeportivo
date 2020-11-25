@@ -105,6 +105,7 @@
             this.txtBoxIdProfesor.Size = new System.Drawing.Size(73, 30);
             this.txtBoxIdProfesor.TabIndex = 74;
             this.txtBoxIdProfesor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBoxIdProfesor.Visible = false;
             // 
             // bunifuCustomLabel4
             // 
@@ -116,6 +117,7 @@
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(76, 16);
             this.bunifuCustomLabel4.TabIndex = 73;
             this.bunifuCustomLabel4.Text = "IdProfesor";
+            this.bunifuCustomLabel4.Visible = false;
             // 
             // bunifuCustomLabel2
             // 
@@ -176,6 +178,7 @@
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(74, 16);
             this.bunifuCustomLabel1.TabIndex = 69;
             this.bunifuCustomLabel1.Text = "IdDeporte";
+            this.bunifuCustomLabel1.Visible = false;
             // 
             // txtBoxIdDeporte
             // 
@@ -193,6 +196,7 @@
             this.txtBoxIdDeporte.Size = new System.Drawing.Size(74, 30);
             this.txtBoxIdDeporte.TabIndex = 68;
             this.txtBoxIdDeporte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBoxIdDeporte.Visible = false;
             // 
             // txtBoxNombreDeporte
             // 

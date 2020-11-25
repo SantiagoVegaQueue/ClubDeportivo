@@ -41,7 +41,7 @@ namespace CapaPresentacion
 
             comboBoxTipoPlan.Focus();
         }
-
+        
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             Validaciones.ValidarCampos(ref txtBoxNombre, "string");
@@ -52,14 +52,12 @@ namespace CapaPresentacion
             Validaciones.ValidarCampos(ref txtBoxDireccion, "string");
             Validaciones.ValidarCampos(ref txtBoxTelefono, "double");
             Validaciones.ValidarCampoCombo(ref comboBoxPago, "string");
-            
             Validaciones.ValidarCampoCombo(ref comboBoxEstcivil, "string");
             Validaciones.ValidarCampoCombo(ref comboBoxSexo, "string");
-
             Validaciones.ValidarCampoCombo(ref comboBoxTipoPlan, "string");
+            
             try
             {
-                
 
                 SocioPleno socio = new SocioPleno();
 

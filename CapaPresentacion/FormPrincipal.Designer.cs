@@ -41,7 +41,6 @@
             this.btnPlenos = new System.Windows.Forms.Button();
             this.btnDeportivos = new System.Windows.Forms.Button();
             this.btnSocios = new System.Windows.Forms.Button();
-            this.btnInicio = new System.Windows.Forms.Button();
             this.panelLogoLateral = new System.Windows.Forms.Panel();
             this.cerrarVentana = new System.Windows.Forms.PictureBox();
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -50,6 +49,8 @@
             this.bunifuDragControl5 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelContedorDeForms = new System.Windows.Forms.Panel();
             this.bunifuDragControl6 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.lblHora = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelMenuLateral.SuspendLayout();
             this.panelSubMenuSocios.SuspendLayout();
@@ -95,7 +96,6 @@
             this.panelMenuLateral.Controls.Add(this.btnDeportes);
             this.panelMenuLateral.Controls.Add(this.panelSubMenuSocios);
             this.panelMenuLateral.Controls.Add(this.btnSocios);
-            this.panelMenuLateral.Controls.Add(this.btnInicio);
             this.panelMenuLateral.Controls.Add(this.panelLogoLateral);
             this.panelMenuLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenuLateral.Location = new System.Drawing.Point(0, 0);
@@ -110,7 +110,7 @@
             this.btnProfesores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfesores.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfesores.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnProfesores.Location = new System.Drawing.Point(0, 430);
+            this.btnProfesores.Location = new System.Drawing.Point(0, 370);
             this.btnProfesores.Name = "btnProfesores";
             this.btnProfesores.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnProfesores.Size = new System.Drawing.Size(166, 60);
@@ -127,7 +127,7 @@
             this.btnDeportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeportes.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeportes.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnDeportes.Location = new System.Drawing.Point(0, 370);
+            this.btnDeportes.Location = new System.Drawing.Point(0, 310);
             this.btnDeportes.Name = "btnDeportes";
             this.btnDeportes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnDeportes.Size = new System.Drawing.Size(166, 60);
@@ -142,7 +142,7 @@
             this.panelSubMenuSocios.Controls.Add(this.btnPlenos);
             this.panelSubMenuSocios.Controls.Add(this.btnDeportivos);
             this.panelSubMenuSocios.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubMenuSocios.Location = new System.Drawing.Point(0, 270);
+            this.panelSubMenuSocios.Location = new System.Drawing.Point(0, 210);
             this.panelSubMenuSocios.Name = "panelSubMenuSocios";
             this.panelSubMenuSocios.Size = new System.Drawing.Size(166, 100);
             this.panelSubMenuSocios.TabIndex = 13;
@@ -190,7 +190,7 @@
             this.btnSocios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSocios.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSocios.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSocios.Location = new System.Drawing.Point(0, 210);
+            this.btnSocios.Location = new System.Drawing.Point(0, 150);
             this.btnSocios.Name = "btnSocios";
             this.btnSocios.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSocios.Size = new System.Drawing.Size(166, 60);
@@ -201,25 +201,9 @@
             this.btnSocios.Click += new System.EventHandler(this.btnSocios_Click);
             this.btnSocios.MouseHover += new System.EventHandler(this.btnSocios_MouseHover);
             // 
-            // btnInicio
-            // 
-            this.btnInicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnInicio.FlatAppearance.BorderSize = 0;
-            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInicio.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnInicio.Location = new System.Drawing.Point(0, 150);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInicio.Size = new System.Drawing.Size(166, 60);
-            this.btnInicio.TabIndex = 11;
-            this.btnInicio.Text = "Inicio";
-            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.UseVisualStyleBackColor = true;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
-            // 
             // panelLogoLateral
             // 
+            this.panelLogoLateral.Controls.Add(this.lblHora);
             this.panelLogoLateral.Controls.Add(this.pictureBox2);
             this.panelLogoLateral.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogoLateral.Location = new System.Drawing.Point(0, 0);
@@ -286,6 +270,22 @@
             this.bunifuDragControl6.TargetControl = this.panelContedorDeForms;
             this.bunifuDragControl6.Vertical = true;
             // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblHora.Location = new System.Drawing.Point(48, 120);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(79, 23);
+            this.lblHora.TabIndex = 11;
+            this.lblHora.Text = "lblHora";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,7 +324,6 @@
         private System.Windows.Forms.Button btnPlenos;
         private System.Windows.Forms.Button btnDeportivos;
         private System.Windows.Forms.Button btnSocios;
-        private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.PictureBox cerrarVentana;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl4;
@@ -332,5 +331,7 @@
         private System.Windows.Forms.Panel panelControlSuperior;
         private System.Windows.Forms.Panel panelContedorDeForms;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl6;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Timer timer1;
     }
 }

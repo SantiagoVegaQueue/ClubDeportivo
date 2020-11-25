@@ -113,5 +113,16 @@ namespace CapaPresentacion
                 FormNotificacion.VerificarForm("Seleccione una fila para eliminar");
             }
         }
+        public void BuscarSocios(string buscar)
+        {
+            SocioDeportivo socio = new SocioDeportivo();
+            tablaSocioDeportivo.DataSource = socio.BuscarSocio(buscar);
+        }
+
+
+        private void txtBoxBuscarSocio_OnValueChanged(object sender, EventArgs e)
+        {
+            BuscarSocios(txtBoxBuscarSocio.Text);
+        }
     }
 }
