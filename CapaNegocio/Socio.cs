@@ -38,6 +38,7 @@ namespace CapaNegocio
 
         }
 
+        #region Getters and Setters
         public int IdSocio { get => idSocio; set => idSocio = value; }
         public string Codigo1 { get => Codigo; set => Codigo = value; }
         public string Nombre1 { get => Nombre; set => Nombre = value; }
@@ -55,36 +56,54 @@ namespace CapaNegocio
         public double PrecioBase1 { get => PrecioBase; set => PrecioBase = value; }
         public double PrecioFinal1 { get => PrecioFinal; set => PrecioFinal = value; }
 
+        #endregion
+
+        #region Listar
         public virtual DataTable ListarSocio()
         {
             Datos_Socio socio = new Datos_Socio();
             return socio.ListarSocio();
         }
 
+        #endregion
+
+        #region Buscar
         public virtual DataTable BuscarSocio(string Buscar1)
         {
             Datos_Socio socio = new Datos_Socio();
             return socio.BuscarSocio(Buscar1);
         }
 
+        #endregion
+
+        #region Insertar
         public virtual void InsertarSocio(string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Nacionalidad1, string EstadoCivil1, string Direccion1, long Telefono1, string Email1, string TipoPago1)
         {
             Datos_Socio socio = new Datos_Socio();
             socio.InsertarSocio(Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Nacionalidad1, EstadoCivil1, Direccion1, Telefono1, Email1, TipoPago1);
         }
 
+        #endregion
+
+        #region Editar
         public virtual void EditarSocio(int IdSocio, string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Nacionalidad1, string EstadoCivil1, string Direccion1, long Telefono1, string Email1, string TipoPago1)
         {
             Datos_Socio socio = new Datos_Socio();
             socio.EditarSocio(IdSocio, Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Nacionalidad1, EstadoCivil1, Direccion1, Telefono1, Email1, TipoPago1);
         }
 
+        #endregion
+
+        #region Eliminar
         public virtual void EliminarSocio(int IdSocio)
         {
             Datos_Socio socio = new Datos_Socio();
             socio.EliminarSocio(IdSocio);
         }
 
+        #endregion
+
+        #region Calculos
         public virtual double calcularPrecioCuota()
         {
             if (TipoPago1 == "Efectivo")
@@ -103,6 +122,9 @@ namespace CapaNegocio
         {
             return PrecioFinal1;
         }
-        
+
+        #endregion
+
+
     }
 }

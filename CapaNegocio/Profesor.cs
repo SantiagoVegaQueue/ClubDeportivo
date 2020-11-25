@@ -43,6 +43,7 @@ namespace CapaNegocio
 
         }
 
+        #region Getters and Setters
         public int IdProfesor { get => idProfesor; set => idProfesor = value; }
         public string Codigo1 { get => Codigo; set => Codigo = value; }
         public string Nombre1 { get => Nombre; set => Nombre = value; }
@@ -55,34 +56,52 @@ namespace CapaNegocio
         public string Email1 { get => Email; set => Email = value; }
         public string Buscar1 { get => Buscar; set => Buscar = value; }
 
+        #endregion
+
+        #region Listar
         public DataTable ListarProfesor()
         {
             Datos_Profesor profesor = new Datos_Profesor();
             return profesor.ListarProfesor();
         }
 
+        #endregion
+
+        #region Buscar
         public DataTable BuscarProfesor(string Buscar1)
         {
             Datos_Profesor profesor = new Datos_Profesor();
             return profesor.BuscarProfesor(Buscar1);
         }
-        //string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Direccion1, long Telefono1, string Email1
+
+        #endregion
+
+        #region Insertar
         public void InsertarProfesor(string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Direccion1, long Telefono1, string Email1)
         {
             Datos_Profesor profesor = new Datos_Profesor();
             profesor.InsertarProfesor(Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Direccion1, Telefono1, Email1);
         }
 
+        #endregion
+
+        #region Editar
         public void EditarProfesor(int IdProfesor, string Nombre1, string Apellido1, string Sexo1, int Dni1, DateTime Fechanac1, string Direccion1, long Telefono1, string Email1)
         {
             Datos_Profesor profesor = new Datos_Profesor();
             profesor.EditarProfesor(IdProfesor, Nombre1, Apellido1, Sexo1, Dni1, Fechanac1, Direccion1, Telefono1, Email1);
         }
 
+        #endregion
+
+        #region Eliminar
         public void EliminarProfesor(int IdProfesor)
         {
             Datos_Profesor profesor = new Datos_Profesor();
             profesor.EliminarProfesor(IdProfesor);
         }
+
+        #endregion
+
     }
 }

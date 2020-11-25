@@ -14,6 +14,7 @@ namespace CapaDatos
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
+        #region Listar
         public DataTable ListarDeporte()
         {
             DataTable tabla = new DataTable();
@@ -31,6 +32,9 @@ namespace CapaDatos
             return tabla;
         }
 
+        #endregion
+
+        #region Buscar
         public DataTable BuscarDeporte(string buscar)
         {
             DataTable tabla = new DataTable();
@@ -49,6 +53,9 @@ namespace CapaDatos
             return tabla;
         }
 
+        #endregion
+
+        #region Insertar
         public void InsertarDeporte(string nombre, string dias, string horarios, int idProf)
         {
             SqlCommand cmd = new SqlCommand("SP_INSERTARDEPORTE", conexion);
@@ -66,6 +73,9 @@ namespace CapaDatos
 
         }
 
+        #endregion
+
+        #region Editar
         public void EditarDeporte(int idDepo, string nombre, string dias, string horarios, int idProf)
         {
             SqlCommand cmd = new SqlCommand("SP_EDITARDEPORTE", conexion);
@@ -83,6 +93,9 @@ namespace CapaDatos
             conexion.Close();
         }
 
+        #endregion
+
+        #region Eliminar
         public void EliminarDeporte(int idDepo)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARDEPORTE", conexion);
@@ -95,5 +108,8 @@ namespace CapaDatos
 
             conexion.Close();
         }
+
+        #endregion
+
     }
 }

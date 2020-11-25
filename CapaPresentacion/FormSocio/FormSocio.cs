@@ -13,6 +13,7 @@ namespace CapaPresentacion
 {
     public partial class FormSocio : Form
     {
+        private string idSocio;
         public FormSocio()
         {
             InitializeComponent();
@@ -141,11 +142,6 @@ namespace CapaPresentacion
 
         #endregion
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         #region Agregar socio deportivo
         private void btnAgregarSocDep_Click(object sender, EventArgs e)
         {
@@ -175,13 +171,14 @@ namespace CapaPresentacion
 
         #endregion
 
+        #region Agregar socio pleno
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             if (tablaSocio.SelectedRows.Count > 0)
             {
                 DateTime fechanac;
                 DateTime.TryParse(tablaSocio.CurrentRow.Cells[6].Value.ToString(), out fechanac);
-                
+
 
                 FormMantenimientoSocioPleno form = new FormMantenimientoSocioPleno();
 
@@ -199,13 +196,22 @@ namespace CapaPresentacion
                 form.comboBoxPago.Text = tablaSocio.CurrentRow.Cells[12].Value.ToString();
 
                 form.ShowDialog();
-                
+
             }
         }
 
+        #endregion
+
+        #region Basura
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
+        #endregion
+
     }
 }

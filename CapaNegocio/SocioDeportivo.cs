@@ -14,8 +14,6 @@ namespace CapaNegocio
 
         public string Inscripcion { get => inscripcion; set => inscripcion = value; }
 
-        
-
         public SocioDeportivo(string tipoPago, double precioBase, string inscripcion)
         {
             this.TipoPago1 = tipoPago;
@@ -31,6 +29,7 @@ namespace CapaNegocio
 
         }
 
+        #region Listar
         public DataTable ListarSocioDeportivo()
         {
             Datos_SocioDeportivo socio = new Datos_SocioDeportivo();
@@ -38,13 +37,30 @@ namespace CapaNegocio
             return socio.ListarSocioDeportivo();
         }
 
+        #endregion
+
+        #region Buscar
+
+        #endregion
+
+        #region Insertar
         public void InsertarSocioDeportivo(int idSocio, string inscripcion)
         {
             Datos_SocioDeportivo socio = new Datos_SocioDeportivo();
             socio.InsertarSocioDeportivo(idSocio, inscripcion);
         }
 
+        #endregion
 
+        #region Editar
+
+        #endregion
+
+        #region Eliminar
+
+        #endregion
+
+        #region PrecioFinal
         public override double Calcularpreciofinal()
         {
             base.calcularPrecioCuota();
@@ -60,6 +76,13 @@ namespace CapaNegocio
             }
             return this.PrecioFinal1;
         }
+
+        #endregion
+
+
+
+
+
 
     }
 }

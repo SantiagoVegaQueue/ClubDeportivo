@@ -31,16 +31,37 @@ namespace CapaNegocio
 
         }
 
+        #region Listar
         public DataTable ListarSocioPleno()
         {
             Datos_SocioPleno socio = new Datos_SocioPleno();
             return socio.ListarSocioPleno();
         }
+
+        #endregion
+
+        #region Buscar
+
+        #endregion
+
+        #region Insertar
         public void InsertarSocioPleno(int idSocio, string tipoPlan)
         {
             Datos_SocioPleno socio = new Datos_SocioPleno();
             socio.InsertarSocioPleno(idSocio, tipoPlan);
         }
+
+        #endregion
+
+        #region Editar
+
+        #endregion
+
+        #region Eliminar
+
+        #endregion
+
+        #region Precio final
         public override double Calcularpreciofinal()
         {
             base.Calcularpreciofinal();
@@ -56,5 +77,9 @@ namespace CapaNegocio
             }
             return this.PrecioFinal1;
         }
+
+        #endregion
+
+
     }
 }

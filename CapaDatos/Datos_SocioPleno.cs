@@ -13,6 +13,7 @@ namespace CapaDatos
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
+        #region Listar
         public DataTable ListarSocioPleno()
         {
             DataTable tabla = new DataTable();
@@ -30,6 +31,13 @@ namespace CapaDatos
             return tabla;
         }
 
+        #endregion
+
+        #region Buscar
+
+        #endregion
+
+        #region Insertar
         public void InsertarSocioPleno(int idSocio, string tipoPlan)
         {
             SqlCommand cmd = new SqlCommand("SP_INSERTARSOCIOPLENO", conexion);
@@ -44,5 +52,16 @@ namespace CapaDatos
             conexion.Close();
 
         }
+
+        #endregion
+
+        #region Editar
+
+        #endregion
+
+        #region Eliminar
+
+        #endregion
+
     }
 }

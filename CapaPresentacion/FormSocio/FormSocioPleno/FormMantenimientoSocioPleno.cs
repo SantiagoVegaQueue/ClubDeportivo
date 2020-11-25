@@ -25,6 +25,18 @@ namespace CapaPresentacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            Validaciones.ValidarCampos(ref txtBoxNombre, "string");
+            Validaciones.ValidarCampos(ref txtBoxApellido, "string");
+            Validaciones.ValidarCampos(ref txtBoxDni, "int");
+            Validaciones.ValidarCampos(ref txtBoxNacionalidad, "string");
+            Validaciones.ValidarCampoCombo(ref comboBoxEstcivil, "string");
+            Validaciones.ValidarCampoCombo(ref comboBoxSexo, "string");
+            Validaciones.ValidarCampos(ref txtBoxEmail, "string");
+            Validaciones.ValidarCampos(ref txtBoxDireccion, "string");
+            Validaciones.ValidarCampos(ref txtBoxTelefono, "double");
+            Validaciones.ValidarCampoCombo(ref comboBoxPago, "string");
+            Validaciones.ValidarCampoCombo(ref comboBoxTipoPlan, "string");
+
             try
             {
                 //SocioPleno socio = new SocioPleno();
@@ -40,8 +52,8 @@ namespace CapaPresentacion
             }
             catch (Exception ex)
             {
-                MessageBox.Show("PASO ESTO PAI: " + ex);
-                //FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
+                //MessageBox.Show("PASO ESTO PAI: " + ex);
+                FormNotificacion.VerificarForm("Atención. Uno o más datos son incorrectos");
             }
         }
     }

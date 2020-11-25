@@ -14,6 +14,7 @@ namespace CapaDatos
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
+        #region Listar
         public DataTable ListarSocioDeportivo()
         {
             DataTable tabla = new DataTable();
@@ -31,6 +32,13 @@ namespace CapaDatos
             return tabla;
         }
 
+        #endregion
+
+        #region Buscar
+
+        #endregion
+
+        #region Insertar
         public void InsertarSocioDeportivo(int idSocio, string inscripcion)
         {
             SqlCommand cmd = new SqlCommand("SP_INSERTARSOCIODEPORTIVO", conexion);
@@ -45,6 +53,16 @@ namespace CapaDatos
             conexion.Close();
 
         }
+
+        #endregion
+
+        #region Editar
+
+        #endregion
+
+        #region Eliminar
+
+        #endregion
 
     }
 }

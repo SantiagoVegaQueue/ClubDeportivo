@@ -13,6 +13,7 @@ namespace CapaDatos
     {
         SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["conectar"].ConnectionString);
 
+        #region Listar 
         public DataTable ListarSocio()
         {
             DataTable tabla = new DataTable();
@@ -29,7 +30,9 @@ namespace CapaDatos
 
             return tabla;
         }
+        #endregion
 
+        #region Buscar
         public DataTable BuscarSocio(string buscar)
         {
             DataTable tabla = new DataTable();
@@ -47,7 +50,9 @@ namespace CapaDatos
 
             return tabla;
         }
+        #endregion
 
+        #region Insertar
         public void InsertarSocio(string nombre, string apellido, string sexo, int dni, DateTime fechanac, string nacionalidad, string estadocivil, string direccion, long telefono, string email, string tipoPago)
         {
             SqlCommand cmd = new SqlCommand("SP_INSERTARSOCIO", conexion);
@@ -72,6 +77,9 @@ namespace CapaDatos
 
         }
 
+        #endregion
+
+        #region Editar
         public void EditarSocio(int idSocio, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string nacionalidad, string estadocivil, string direccion, long telefono, string email, string tipoPago)
         {
             SqlCommand cmd = new SqlCommand("SP_EDITARSOCIO", conexion);
@@ -90,13 +98,16 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@TELEFONO", telefono);
             cmd.Parameters.AddWithValue("@EMAIL", email);
             cmd.Parameters.AddWithValue("@TIPOPAGO", tipoPago);
-            
+
             cmd.ExecuteNonQuery();
 
             conexion.Close();
 
         }
 
+        #endregion
+
+        #region Eliminar
         public void EliminarSocio(int idSocio)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARSOCIO", conexion);
@@ -109,5 +120,7 @@ namespace CapaDatos
 
             conexion.Close();
         }
+
+        #endregion
     }
 }

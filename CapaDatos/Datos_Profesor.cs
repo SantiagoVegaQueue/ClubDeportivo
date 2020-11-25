@@ -29,6 +29,8 @@ namespace CapaDatos
          * Cerramos la conexion
          * Retornamos la tabla
          */
+
+        #region Listar
         public DataTable ListarProfesor()
         {
             DataTable tabla = new DataTable();
@@ -46,6 +48,9 @@ namespace CapaDatos
             return tabla;
         }
 
+        #endregion
+
+        #region Buscar
         public DataTable BuscarProfesor(string buscar)
         {
             DataTable tabla = new DataTable();
@@ -54,7 +59,7 @@ namespace CapaDatos
             conexion.Open();
 
 
-            cmd.Parameters.AddWithValue("@BUSCAR",buscar);
+            cmd.Parameters.AddWithValue("@BUSCAR", buscar);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
 
@@ -64,6 +69,9 @@ namespace CapaDatos
             return tabla;
         }
 
+        #endregion
+
+        #region Insertar
         public void InsertarProfesor(string nombre, string apellido, string sexo, int dni, DateTime fechanac, string direccion, long telefono, string email)
         {
             SqlCommand cmd = new SqlCommand("SP_INSERTARPROFESOR", conexion);
@@ -85,6 +93,9 @@ namespace CapaDatos
 
         }
 
+        #endregion
+
+        #region Editar
         public void EditarProfesor(int idProfe, string nombre, string apellido, string sexo, int dni, DateTime fechanac, string direccion, long telefono, string email)
         {
             SqlCommand cmd = new SqlCommand("SP_EDITARPROFESOR", conexion);
@@ -107,6 +118,9 @@ namespace CapaDatos
 
         }
 
+        #endregion
+
+        #region Eliminar
         public void EliminarProfesor(int idProfe)
         {
             SqlCommand cmd = new SqlCommand("SP_ELIMINARPROFESOR", conexion);
@@ -119,5 +133,7 @@ namespace CapaDatos
 
             conexion.Close();
         }
+
+        #endregion
     }
 }
