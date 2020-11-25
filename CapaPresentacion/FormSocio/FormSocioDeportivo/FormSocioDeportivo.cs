@@ -89,5 +89,29 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (tablaSocioDeportivo.SelectedRows.Count > 0)
+            {
+                DialogResult result = new DialogResult();
+                FormAdvertencia form = new FormAdvertencia("¿Estas seguro de eliminar?");
+                result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    Socio socio = new Socio();
+                    int idSocio = Convert.ToInt32(tablaSocioDeportivo.CurrentRow.Cells[0].Value.ToString());
+                    socio.EliminarSocio(idSocio);
+
+                    FormExito.ConfirmarForm("Se eliminó correctamente");
+                    ListarSociosDeportivos();
+                }
+
+            }
+            else
+            {
+                FormNotificacion.VerificarForm("Seleccione una fila para eliminar");
+            }
+        }
     }
 }

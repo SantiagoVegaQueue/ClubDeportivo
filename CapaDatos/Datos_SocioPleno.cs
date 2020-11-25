@@ -60,7 +60,18 @@ namespace CapaDatos
         #endregion
 
         #region Eliminar
+        public void EliminarSocioPleno(int idSocioPleno)
+        {
+            SqlCommand cmd = new SqlCommand("SP_ELIMINARSOCIOPLENO", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
 
+            cmd.Parameters.AddWithValue("@IDSOCIOPLENO", idSocioPleno);
+
+            cmd.ExecuteNonQuery();
+
+            conexion.Close();
+        }
         #endregion
 
     }

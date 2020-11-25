@@ -57,7 +57,11 @@ namespace CapaNegocio
         #endregion
 
         #region Eliminar
-
+        public override void EliminarSocio(int idSocioDeportivo)
+        {
+            Datos_SocioDeportivo socio = new Datos_SocioDeportivo();
+            socio.EliminarSocioDeportivo(idSocioDeportivo);
+        }
         #endregion
 
         #region PrecioFinal

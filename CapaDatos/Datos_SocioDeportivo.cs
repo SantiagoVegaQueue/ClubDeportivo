@@ -61,7 +61,18 @@ namespace CapaDatos
         #endregion
 
         #region Eliminar
+        public void EliminarSocioDeportivo(int idSocioDeportivo)
+        {
+            SqlCommand cmd = new SqlCommand("SP_ELIMINARSOCIODEPORTIVO", conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            conexion.Open();
 
+            cmd.Parameters.AddWithValue("@IDSOCIODEPORTIVO", idSocioDeportivo);
+
+            cmd.ExecuteNonQuery();
+
+            conexion.Close();
+        }
         #endregion
 
     }

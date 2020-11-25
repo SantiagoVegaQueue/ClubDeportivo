@@ -35,7 +35,7 @@ namespace CapaPresentacion
             Validaciones.ValidarCampos(ref txtBoxDniProfesor, "int");
             Validaciones.ValidarCampos(ref txtBoxTelefonoProfesor, "long");
             Validaciones.ValidarCampos(ref txtBoxEmailProfesor, "string");
-            Validaciones.ValidarCampoCombo(ref comboBoxSexoProfesor, "string");
+            //Validaciones.ValidarCampoCombo(ref comboBoxSexoProfesor, "string");
 
             if (!editar)
             {

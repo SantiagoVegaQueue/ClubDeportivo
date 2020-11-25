@@ -80,22 +80,30 @@ namespace CapaPresentacion
 
         public static void ValidarCampoCombo(ref ComboBox campo, string tipo)
         {
-            if (campo.Text != "")
+            switch (tipo)
             {
-                try
-                {
-                    Convert.ToString(campo.Text);
-                    campo.BackColor = System.Drawing.Color.FromArgb(240, 240, 240);
-                }
-                catch (Exception)
-                {
-                    campo.BackColor = System.Drawing.Color.FromArgb(255, 183, 170);
-                }
+                case "string":
+                    if (campo.Text != "")
+                    {
+                        try
+                        {
+                            Convert.ToString(campo.Text);
+                            campo.BackColor = System.Drawing.Color.FromArgb(240, 240, 240);
+                        }
+                        catch (Exception)
+                        {
+                            campo.BackColor = System.Drawing.Color.FromArgb(255, 183, 170);
+                        }
+                    }
+                    else
+                    {
+                        campo.BackColor = System.Drawing.Color.FromArgb(255, 183, 170);
+                    }
+                    break;
+                default:
+                    break;
             }
-            else
-            {
-                campo.BackColor = System.Drawing.Color.FromArgb(255, 183, 170);
-            }
+       
         }
     }
 }

@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSocioDeportivo));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnExportarPDF = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtBoxBuscarSocio = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tablaSocioDeportivo = new System.Windows.Forms.DataGridView();
             this.btnCalcularPrecioFinal = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaSocioDeportivo)).BeginInit();
             this.SuspendLayout();
@@ -134,24 +135,24 @@
             this.tablaSocioDeportivo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tablaSocioDeportivo.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tablaSocioDeportivo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tablaSocioDeportivo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tablaSocioDeportivo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.tablaSocioDeportivo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tablaSocioDeportivo.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tablaSocioDeportivo.DefaultCellStyle = dataGridViewCellStyle6;
             this.tablaSocioDeportivo.EnableHeadersVisualStyles = false;
             this.tablaSocioDeportivo.Location = new System.Drawing.Point(13, 100);
             this.tablaSocioDeportivo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -186,7 +187,7 @@
             this.btnCalcularPrecioFinal.IconVisible = true;
             this.btnCalcularPrecioFinal.IconZoom = 90D;
             this.btnCalcularPrecioFinal.IsTab = false;
-            this.btnCalcularPrecioFinal.Location = new System.Drawing.Point(490, 661);
+            this.btnCalcularPrecioFinal.Location = new System.Drawing.Point(392, 661);
             this.btnCalcularPrecioFinal.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnCalcularPrecioFinal.Name = "btnCalcularPrecioFinal";
             this.btnCalcularPrecioFinal.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -201,12 +202,50 @@
             this.btnCalcularPrecioFinal.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcularPrecioFinal.Click += new System.EventHandler(this.btnCalcularPrecioFinal_Click);
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.BorderRadius = 7;
+            this.btnEliminar.ButtonText = "Eliminar";
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEliminar.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEliminar.Iconimage = null;
+            this.btnEliminar.Iconimage_right = null;
+            this.btnEliminar.Iconimage_right_Selected = null;
+            this.btnEliminar.Iconimage_Selected = null;
+            this.btnEliminar.IconMarginLeft = 0;
+            this.btnEliminar.IconMarginRight = 0;
+            this.btnEliminar.IconRightVisible = true;
+            this.btnEliminar.IconRightZoom = 0D;
+            this.btnEliminar.IconVisible = true;
+            this.btnEliminar.IconZoom = 90D;
+            this.btnEliminar.IsTab = false;
+            this.btnEliminar.Location = new System.Drawing.Point(602, 661);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(41)))), ((int)(((byte)(0)))));
+            this.btnEliminar.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEliminar.selected = false;
+            this.btnEliminar.Size = new System.Drawing.Size(200, 50);
+            this.btnEliminar.TabIndex = 67;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEliminar.Textcolor = System.Drawing.Color.White;
+            this.btnEliminar.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // FormSocioDeportivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1170, 723);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnCalcularPrecioFinal);
             this.Controls.Add(this.btnExportarPDF);
             this.Controls.Add(this.bunifuCustomLabel1);
@@ -231,5 +270,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView tablaSocioDeportivo;
         private Bunifu.Framework.UI.BunifuFlatButton btnCalcularPrecioFinal;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEliminar;
     }
 }
