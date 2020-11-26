@@ -125,9 +125,20 @@ namespace CapaPresentacion
         }
         #endregion
 
+        #region Basura
         private void bunifuCustomLabel2_Click(object sender, EventArgs e)
         {
 
         }
+
+        #endregion
+
+        #region Imprimir PDF
+        private void btnExportarPDF_Click(object sender, EventArgs e)
+        {
+            ImprimirPDF.printTabla(ref tablaDeporte);
+        }
+        #endregion
+
     }
 }

@@ -37,6 +37,7 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtBoxBuscarSocio = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExportarPDF = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.tablaSocioPleno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -107,7 +108,7 @@
             this.btnCalcularPrecioFinal.IconVisible = true;
             this.btnCalcularPrecioFinal.IconZoom = 90D;
             this.btnCalcularPrecioFinal.IsTab = false;
-            this.btnCalcularPrecioFinal.Location = new System.Drawing.Point(394, 661);
+            this.btnCalcularPrecioFinal.Location = new System.Drawing.Point(296, 661);
             this.btnCalcularPrecioFinal.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnCalcularPrecioFinal.Name = "btnCalcularPrecioFinal";
             this.btnCalcularPrecioFinal.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -144,7 +145,7 @@
             this.btnEliminar.IconVisible = true;
             this.btnEliminar.IconZoom = 90D;
             this.btnEliminar.IsTab = false;
-            this.btnEliminar.Location = new System.Drawing.Point(604, 661);
+            this.btnEliminar.Location = new System.Drawing.Point(506, 661);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
@@ -201,12 +202,50 @@
             this.pictureBox1.TabIndex = 69;
             this.pictureBox1.TabStop = false;
             // 
+            // btnExportarPDF
+            // 
+            this.btnExportarPDF.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnExportarPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnExportarPDF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExportarPDF.BorderRadius = 7;
+            this.btnExportarPDF.ButtonText = "Exportar a PDF";
+            this.btnExportarPDF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExportarPDF.DisabledColor = System.Drawing.Color.Gray;
+            this.btnExportarPDF.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportarPDF.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnExportarPDF.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnExportarPDF.Iconimage")));
+            this.btnExportarPDF.Iconimage_right = null;
+            this.btnExportarPDF.Iconimage_right_Selected = null;
+            this.btnExportarPDF.Iconimage_Selected = ((System.Drawing.Image)(resources.GetObject("btnExportarPDF.Iconimage_Selected")));
+            this.btnExportarPDF.IconMarginLeft = 0;
+            this.btnExportarPDF.IconMarginRight = 0;
+            this.btnExportarPDF.IconRightVisible = true;
+            this.btnExportarPDF.IconRightZoom = 0D;
+            this.btnExportarPDF.IconVisible = true;
+            this.btnExportarPDF.IconZoom = 50D;
+            this.btnExportarPDF.IsTab = false;
+            this.btnExportarPDF.Location = new System.Drawing.Point(716, 661);
+            this.btnExportarPDF.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            this.btnExportarPDF.Name = "btnExportarPDF";
+            this.btnExportarPDF.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnExportarPDF.OnHovercolor = System.Drawing.Color.White;
+            this.btnExportarPDF.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(14)))));
+            this.btnExportarPDF.selected = true;
+            this.btnExportarPDF.Size = new System.Drawing.Size(200, 50);
+            this.btnExportarPDF.TabIndex = 72;
+            this.btnExportarPDF.Text = "Exportar a PDF";
+            this.btnExportarPDF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnExportarPDF.Textcolor = System.Drawing.Color.White;
+            this.btnExportarPDF.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportarPDF.Click += new System.EventHandler(this.btnExportarPDF_Click);
+            // 
             // FormSocioPleno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1170, 723);
+            this.Controls.Add(this.btnExportarPDF);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.txtBoxBuscarSocio);
             this.Controls.Add(this.pictureBox1);
@@ -232,5 +271,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtBoxBuscarSocio;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnExportarPDF;
     }
 }

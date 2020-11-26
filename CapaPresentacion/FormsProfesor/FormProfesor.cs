@@ -161,13 +161,6 @@ namespace CapaPresentacion
         {
 
         }
-        #endregion
-
-        #region Botón de exportar a PDF
-        private void btnExportarPDF_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnExportarPDF_MouseHover(object sender, EventArgs e)
         {
@@ -178,6 +171,15 @@ namespace CapaPresentacion
         {
 
         }
+        #endregion
+
+        #region Botón de exportar a PDF
+        private void btnExportarPDF_Click(object sender, EventArgs e)
+        {
+            ImprimirPDF.printTabla(ref tablaProfesor);
+        }
+
+        
         #endregion
 
     }

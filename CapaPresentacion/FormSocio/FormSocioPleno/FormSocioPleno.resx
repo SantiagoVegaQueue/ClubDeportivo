@@ -134,4 +134,32 @@
         +llmz4m7WoCsA4JFNmb82TmdJEnyF/U5y7qwOuovAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnExportarPDF.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAfZJREFUSEvl
+        Vs8rRGEUvUPKgoViofwITdjYWFjZ8Sf4C8hGshM2WFhYY4GFvVDKQhaUEn+ArbCgkDFIoqZx7nTuuOM9
+        3huUhZPT/e75zr3X9+Z99SQMKZGGtMgaeANmI3gK9rM0Pm5F6lF46xrF5QxbxAMK1rXwTmQLsYlyKHDy
+        bg7JETVzWZEEt78GCh60SE9G6VOgabkfRM7GGmYFTCPhBnguRQ4zM9NIuOYfuUBLOMzINBKucRgHaAvC
+        TEwjcS+yCf+J46PWk2e0BWEmpt8C3saOyD6/MUjxd4OQ7Jj4A26zXR62x/RdeBCpRqzCRa1DXFUNrlKw
+        TDXc+hFoz+AVtBKW68uwol6meahWoHsBRUNg16NIjdOGsR7jehK80DW0QVD/oXPzeqhWoHsBsR+NkhjU
+        7rRFXT+J1CL2ukGdYB/yY91XzUO1Av2jgEfYhuJ90xB1UOZapAKxxwbhUTYi70Q8MK+HagW6F1A0Zblp
+        iBPgKPfn3YlyJzWq5hHQTYCSQKNpy6nlfvQbkUrk42AGnkvWLZtPqZpHQEeyR/EOfOHamCa9plTvq8t3
+        2S4P22MaRKQhJv7noHuaWigVDbyZSfbA3yfAzgZNh6BeyuYiqTVHoPZYY9sgcGFbYUjR+BOm9GRsGw73
+        AZn7IiqS+uj1k809epE3c4UhfQDK+24AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnExportarPDF.Iconimage_Selected" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAfZJREFUSEvl
+        Vs8rRGEUvUPKgoViofwITdjYWFjZ8Sf4C8hGshM2WFhYY4GFvVDKQhaUEn+ArbCgkDFIoqZx7nTuuOM9
+        3huUhZPT/e75zr3X9+Z99SQMKZGGtMgaeANmI3gK9rM0Pm5F6lF46xrF5QxbxAMK1rXwTmQLsYlyKHDy
+        bg7JETVzWZEEt78GCh60SE9G6VOgabkfRM7GGmYFTCPhBnguRQ4zM9NIuOYfuUBLOMzINBKucRgHaAvC
+        TEwjcS+yCf+J46PWk2e0BWEmpt8C3saOyD6/MUjxd4OQ7Jj4A26zXR62x/RdeBCpRqzCRa1DXFUNrlKw
+        TDXc+hFoz+AVtBKW68uwol6meahWoHsBRUNg16NIjdOGsR7jehK80DW0QVD/oXPzeqhWoHsBsR+NkhjU
+        7rRFXT+J1CL2ukGdYB/yY91XzUO1Av2jgEfYhuJ90xB1UOZapAKxxwbhUTYi70Q8MK+HagW6F1A0Zblp
+        iBPgKPfn3YlyJzWq5hHQTYCSQKNpy6nlfvQbkUrk42AGnkvWLZtPqZpHQEeyR/EOfOHamCa9plTvq8t3
+        2S4P22MaRKQhJv7noHuaWigVDbyZSfbA3yfAzgZNh6BeyuYiqTVHoPZYY9sgcGFbYUjR+BOm9GRsGw73
+        AZn7IiqS+uj1k809epE3c4UhfQDK+24AAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

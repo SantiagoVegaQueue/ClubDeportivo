@@ -99,5 +99,10 @@ namespace CapaPresentacion
 
             }
         }
+
+        private void btnExportarPDF_Click(object sender, EventArgs e)
+        {
+            ImprimirPDF.printTabla(ref tablaSocioPleno);
+        }
     }
 }

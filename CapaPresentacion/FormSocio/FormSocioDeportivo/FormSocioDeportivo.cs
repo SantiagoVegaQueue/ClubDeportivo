@@ -124,5 +124,10 @@ namespace CapaPresentacion
         {
             BuscarSocios(txtBoxBuscarSocio.Text);
         }
+
+        private void btnExportarPDF_Click(object sender, EventArgs e)
+        {
+            ImprimirPDF.printTabla(ref tablaSocioDeportivo);
+        }
     }
 }

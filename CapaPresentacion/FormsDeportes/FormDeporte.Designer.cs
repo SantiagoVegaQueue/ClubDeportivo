@@ -231,6 +231,7 @@
             this.btnExportarPDF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnExportarPDF.Textcolor = System.Drawing.Color.White;
             this.btnExportarPDF.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExportarPDF.Click += new System.EventHandler(this.btnExportarPDF_Click);
             // 
             // tablaDeporte
             // 
